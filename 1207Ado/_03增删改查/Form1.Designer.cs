@@ -42,9 +42,9 @@
             this.dgv = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmiDelete = new System.Windows.Forms.ToolStripMenuItem();
-            this.增加ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiAdd = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiUpdate = new System.Windows.Forms.ToolStripMenuItem();
-            this.刷新ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiRefresh = new System.Windows.Forms.ToolStripMenuItem();
             this.btnStudentCount = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
@@ -161,37 +161,39 @@
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiDelete,
-            this.增加ToolStripMenuItem,
+            this.tsmiAdd,
             this.tsmiUpdate,
-            this.刷新ToolStripMenuItem});
+            this.tsmiRefresh});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(101, 92);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 114);
             // 
             // tsmiDelete
             // 
             this.tsmiDelete.Name = "tsmiDelete";
-            this.tsmiDelete.Size = new System.Drawing.Size(100, 22);
+            this.tsmiDelete.Size = new System.Drawing.Size(152, 22);
             this.tsmiDelete.Text = "删除";
             this.tsmiDelete.Click += new System.EventHandler(this.tsmiDelete_Click);
             // 
-            // 增加ToolStripMenuItem
+            // tsmiAdd
             // 
-            this.增加ToolStripMenuItem.Name = "增加ToolStripMenuItem";
-            this.增加ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
-            this.增加ToolStripMenuItem.Text = "增加";
+            this.tsmiAdd.Name = "tsmiAdd";
+            this.tsmiAdd.Size = new System.Drawing.Size(152, 22);
+            this.tsmiAdd.Text = "增加";
+            this.tsmiAdd.Click += new System.EventHandler(this.tsmiAdd_Click);
             // 
             // tsmiUpdate
             // 
             this.tsmiUpdate.Name = "tsmiUpdate";
-            this.tsmiUpdate.Size = new System.Drawing.Size(100, 22);
+            this.tsmiUpdate.Size = new System.Drawing.Size(152, 22);
             this.tsmiUpdate.Text = "修改";
             this.tsmiUpdate.Click += new System.EventHandler(this.tsmiUpdate_Click);
             // 
-            // 刷新ToolStripMenuItem
+            // tsmiRefresh
             // 
-            this.刷新ToolStripMenuItem.Name = "刷新ToolStripMenuItem";
-            this.刷新ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
-            this.刷新ToolStripMenuItem.Text = "刷新";
+            this.tsmiRefresh.Name = "tsmiRefresh";
+            this.tsmiRefresh.Size = new System.Drawing.Size(152, 22);
+            this.tsmiRefresh.Text = "刷新";
+            this.tsmiRefresh.Click += new System.EventHandler(this.tsmiRefresh_Click);
             // 
             // btnStudentCount
             // 
@@ -237,9 +239,9 @@
         private System.Windows.Forms.DataGridView dgv;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem tsmiDelete;
-        private System.Windows.Forms.ToolStripMenuItem 增加ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmiAdd;
         private System.Windows.Forms.ToolStripMenuItem tsmiUpdate;
-        private System.Windows.Forms.ToolStripMenuItem 刷新ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmiRefresh;
         private System.Windows.Forms.Button btnStudentCount;
     }
 }

@@ -57,7 +57,7 @@
             this.groupBox1.Size = new System.Drawing.Size(184, 166);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "注册";
+            this.groupBox1.Text = "更新";
             // 
             // btnUpdate
             // 
@@ -141,6 +141,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FormUpdate";
             this.Text = "FormUpdate";
+            this.Load += new System.EventHandler(this.FormUpdate_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

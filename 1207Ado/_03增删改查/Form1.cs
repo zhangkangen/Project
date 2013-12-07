@@ -159,6 +159,21 @@ namespace _03增删改查
             MessageBox.Show("班级人数是" + count + "人");
         }
 
+        private void tsmiAdd_Click(object sender, EventArgs e)
+        {
+            FormUpdate fuAdd = new FormUpdate("add", LoadDGV);
+            fuAdd.Show();
+        }
+        /// <summary>
+        /// 刷新数据
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tsmiRefresh_Click(object sender, EventArgs e)
+        {
+            LoadDGV();
+        }
+
 
     }
 }
