@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01数据库连接", "_01数据库连接\_01数据库连接.csproj", "{4E911839-8EA7-4C41-B54C-9083900F835D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02再连接", "_02再连接\_02再连接.csproj", "{80FC1B70-74C9-47AC-9EA3-AB2D2BF0BCC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_03增删改查", "_03增删改查\_03增删改查.csproj", "{8E9C8D4C-C19D-476D-BC40-5FE363EC088B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E911839-8EA7-4C41-B54C-9083900F835D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E911839-8EA7-4C41-B54C-9083900F835D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E911839-8EA7-4C41-B54C-9083900F835D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E911839-8EA7-4C41-B54C-9083900F835D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80FC1B70-74C9-47AC-9EA3-AB2D2BF0BCC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80FC1B70-74C9-47AC-9EA3-AB2D2BF0BCC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80FC1B70-74C9-47AC-9EA3-AB2D2BF0BCC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80FC1B70-74C9-47AC-9EA3-AB2D2BF0BCC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E9C8D4C-C19D-476D-BC40-5FE363EC088B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E9C8D4C-C19D-476D-BC40-5FE363EC088B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E9C8D4C-C19D-476D-BC40-5FE363EC088B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E9C8D4C-C19D-476D-BC40-5FE363EC088B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
