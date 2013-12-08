@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01SQLHelper练习", "_01SQ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02SQLHelper练习", "_02SQLHelper练习\_02SQLHelper练习.csproj", "{AA84EEEF-A346-4989-9B36-5D526810F7A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_03SqlHelper练习", "_03SqlHelper练习\_03SqlHelper练习.csproj", "{2CCA7ECD-AAB9-4762-AB86-0B22325C2AB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_04登陆案例", "_04登陆案例\_04登陆案例.csproj", "{896ECCB3-28E5-4724-A68D-EB6656F17DA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{AA84EEEF-A346-4989-9B36-5D526810F7A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA84EEEF-A346-4989-9B36-5D526810F7A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA84EEEF-A346-4989-9B36-5D526810F7A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CCA7ECD-AAB9-4762-AB86-0B22325C2AB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CCA7ECD-AAB9-4762-AB86-0B22325C2AB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CCA7ECD-AAB9-4762-AB86-0B22325C2AB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CCA7ECD-AAB9-4762-AB86-0B22325C2AB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{896ECCB3-28E5-4724-A68D-EB6656F17DA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{896ECCB3-28E5-4724-A68D-EB6656F17DA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{896ECCB3-28E5-4724-A68D-EB6656F17DA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{896ECCB3-28E5-4724-A68D-EB6656F17DA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
