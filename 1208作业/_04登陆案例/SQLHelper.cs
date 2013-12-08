@@ -10,15 +10,15 @@ namespace _04登陆案例
 {
 	public class SQLHelper
 	{
-		private static readonly string strConn = ConfigurationManager.ConnectionStrings[ "strConn" ].ConnectionString;
+		private static readonly string strConn = ConfigurationManager.ConnectionStrings["strConn"].ConnectionString;
 		public static int ExecuteNonQuery(string sql, params SqlParameter[] param)
 		{
-			using (SqlConnection conn = new SqlConnection(strConn))
+			using(SqlConnection conn = new SqlConnection(strConn))
 			{
-				using (SqlCommand cmd = new SqlCommand(sql, conn))
+				using(SqlCommand cmd = new SqlCommand(sql, conn))
 				{
 					conn.Open();
-					if (param != null)
+					if(param != null)
 					{
 						cmd.Parameters.AddRange(param);
 					}
@@ -28,12 +28,12 @@ namespace _04登陆案例
 		}
 		public static object ExecuteScalar(string sql, params SqlParameter[] param)
 		{
-			using (SqlConnection conn = new SqlConnection(strConn))
+			using(SqlConnection conn = new SqlConnection(strConn))
 			{
-				using (SqlCommand cmd = new SqlCommand(sql, conn))
+				using(SqlCommand cmd = new SqlCommand(sql, conn))
 				{
 					conn.Open();
-					if (param != null)
+					if(param != null)
 					{
 						cmd.Parameters.AddRange(param);
 					}
@@ -44,18 +44,18 @@ namespace _04登陆案例
 		public static SqlDataReader ExecuteReader(string sql, params SqlParameter[] param)
 		{
 			SqlConnection conn = new SqlConnection(strConn);
-			using (SqlCommand cmd = new SqlCommand(sql, conn))
+			using(SqlCommand cmd = new SqlCommand(sql, conn))
 			{
 				try
 				{
 					conn.Open();
-					if (param != null)
+					if(param != null)
 					{
 						cmd.Parameters.AddRange(param);
 					}
-					return cmd.ExecuteReader();
+					return cmd.ExecuteReader(System.Data.CommandBehavior.CloseConnection);
 				}
-				catch (Exception e)
+				catch(Exception e)
 				{
 					conn.Close();
 					conn.Dispose();
