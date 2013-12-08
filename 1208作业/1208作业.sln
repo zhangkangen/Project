@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_03SqlHelper练习", "_03Sq
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_04登陆案例", "_04登陆案例\_04登陆案例.csproj", "{896ECCB3-28E5-4724-A68D-EB6656F17DA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_05SQLHelper练习", "_05SQLHelper练习\_05SQLHelper练习.csproj", "{8DF123EE-4BB8-4F90-928F-409D3362A68D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{896ECCB3-28E5-4724-A68D-EB6656F17DA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{896ECCB3-28E5-4724-A68D-EB6656F17DA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{896ECCB3-28E5-4724-A68D-EB6656F17DA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DF123EE-4BB8-4F90-928F-409D3362A68D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DF123EE-4BB8-4F90-928F-409D3362A68D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DF123EE-4BB8-4F90-928F-409D3362A68D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DF123EE-4BB8-4F90-928F-409D3362A68D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
