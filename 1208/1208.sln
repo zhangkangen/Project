@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02登陆案例", "_02登�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_03导出数据", "_03导出数据\_03导出数据.csproj", "{B949CB93-03A2-4D3A-8B96-F1893F107FF7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_04导入数据", "_04导入数据\_04导入数据.csproj", "{F726BB19-AEF6-41E3-BE6E-EDB17ACF8337}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_05新版增删改查", "_05新版增删改查\_05新版增删改查.csproj", "{61E75C98-7BD6-46F1-9738-9199D7E71878}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{B949CB93-03A2-4D3A-8B96-F1893F107FF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B949CB93-03A2-4D3A-8B96-F1893F107FF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B949CB93-03A2-4D3A-8B96-F1893F107FF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F726BB19-AEF6-41E3-BE6E-EDB17ACF8337}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F726BB19-AEF6-41E3-BE6E-EDB17ACF8337}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F726BB19-AEF6-41E3-BE6E-EDB17ACF8337}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F726BB19-AEF6-41E3-BE6E-EDB17ACF8337}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61E75C98-7BD6-46F1-9738-9199D7E71878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61E75C98-7BD6-46F1-9738-9199D7E71878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61E75C98-7BD6-46F1-9738-9199D7E71878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61E75C98-7BD6-46F1-9738-9199D7E71878}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
