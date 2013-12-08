@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01连接数据库", "_01连接数据库\_01连接数据库.csproj", "{8745271C-FCC3-4FC6-986C-8909854146D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02登陆案例", "_02登陆案例\_02登陆案例.csproj", "{0C4EA36C-0BE4-4D2B-81B7-A4BF830CA4A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_03导出数据", "_03导出数据\_03导出数据.csproj", "{B949CB93-03A2-4D3A-8B96-F1893F107FF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8745271C-FCC3-4FC6-986C-8909854146D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8745271C-FCC3-4FC6-986C-8909854146D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8745271C-FCC3-4FC6-986C-8909854146D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8745271C-FCC3-4FC6-986C-8909854146D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C4EA36C-0BE4-4D2B-81B7-A4BF830CA4A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C4EA36C-0BE4-4D2B-81B7-A4BF830CA4A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C4EA36C-0BE4-4D2B-81B7-A4BF830CA4A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C4EA36C-0BE4-4D2B-81B7-A4BF830CA4A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B949CB93-03A2-4D3A-8B96-F1893F107FF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B949CB93-03A2-4D3A-8B96-F1893F107FF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B949CB93-03A2-4D3A-8B96-F1893F107FF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B949CB93-03A2-4D3A-8B96-F1893F107FF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
