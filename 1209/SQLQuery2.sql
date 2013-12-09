@@ -5,3 +5,4 @@ SELECT * FROM Category
 
 SELECT * FROM contentInfo
 select tid,tname from category where tparentid =-1;
+

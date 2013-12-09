@@ -29,8 +29,8 @@
 		private void InitializeComponent()
 		{
 			this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-			this.splitContainer2 = new System.Windows.Forms.SplitContainer();
 			this.tvCategory = new System.Windows.Forms.TreeView();
+			this.splitContainer2 = new System.Windows.Forms.SplitContainer();
 			this.listBox1 = new System.Windows.Forms.ListBox();
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -60,6 +60,15 @@
 			this.splitContainer1.SplitterDistance = 119;
 			this.splitContainer1.TabIndex = 0;
 			// 
+			// tvCategory
+			// 
+			this.tvCategory.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.tvCategory.Location = new System.Drawing.Point(0, 0);
+			this.tvCategory.Name = "tvCategory";
+			this.tvCategory.Size = new System.Drawing.Size(119, 387);
+			this.tvCategory.TabIndex = 0;
+			this.tvCategory.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.tvCategory_NodeMouseDoubleClick);
+			// 
 			// splitContainer2
 			// 
 			this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -78,14 +87,6 @@
 			this.splitContainer2.SplitterDistance = 135;
 			this.splitContainer2.TabIndex = 0;
 			// 
-			// tvCategory
-			// 
-			this.tvCategory.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tvCategory.Location = new System.Drawing.Point(0, 0);
-			this.tvCategory.Name = "tvCategory";
-			this.tvCategory.Size = new System.Drawing.Size(119, 387);
-			this.tvCategory.TabIndex = 0;
-			// 
 			// listBox1
 			// 
 			this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -95,6 +96,7 @@
 			this.listBox1.Name = "listBox1";
 			this.listBox1.Size = new System.Drawing.Size(341, 135);
 			this.listBox1.TabIndex = 0;
+			this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
 			// 
 			// textBox1
 			// 
