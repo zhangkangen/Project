@@ -62,7 +62,6 @@ namespace _04登陆案例
 							else//登陆失败
 							{
 								//刷新时间
-								RefreshTime(loginId);
 								MessageBox.Show("登陆失败");
 							}
 						}
@@ -90,7 +89,6 @@ namespace _04登陆案例
 							//错误次数加一次，
 							ErrorCountAdd(loginId);
 							//刷新时间
-							RefreshTime(loginId);
 							MessageBox.Show("登陆失败");
 						}
 
