@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
 using System.Data;
+using System.Data.SqlClient;
 using System.Configuration;
 
-namespace _02资料管理器
+namespace _03图片浏览
 {
-	public class SqlHelper
+	public class SQLHelper
 	{
 		private static readonly string strConn = ConfigurationManager.ConnectionStrings["strConn"].ConnectionString;
 		public static int ExecuteNonQuery(string sql, params SqlParameter[] param)
@@ -36,7 +36,6 @@ namespace _02资料管理器
 				}
 			}
 		}
-
 		public static SqlDataReader ExecuteReader(string sql, params SqlParameter[] param)
 		{
 			SqlConnection conn = new SqlConnection(strConn);
@@ -56,8 +55,7 @@ namespace _02资料管理器
 				}
 			}
 		}
-
-		public static DataTable GetTable(string sql, params SqlParameter[] param)
+		public static DataTable GetDataTable(string sql, params SqlParameter[] param)
 		{
 			DataTable dt = new DataTable();
 			using(SqlDataAdapter sda = new SqlDataAdapter(sql, strConn))
