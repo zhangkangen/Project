@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02省市联动", "_02省�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_03资料管理器", "_03资料管理器\_03资料管理器.csproj", "{5FDE2213-39DC-4108-B6EB-BA7F12CA0978}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_04dataset使用", "_04dataset使用\_04dataset使用.csproj", "{255A81E8-4531-4C57-8160-CFC2DEEF6091}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{5FDE2213-39DC-4108-B6EB-BA7F12CA0978}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FDE2213-39DC-4108-B6EB-BA7F12CA0978}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FDE2213-39DC-4108-B6EB-BA7F12CA0978}.Release|Any CPU.Build.0 = Release|Any CPU
+		{255A81E8-4531-4C57-8160-CFC2DEEF6091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{255A81E8-4531-4C57-8160-CFC2DEEF6091}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{255A81E8-4531-4C57-8160-CFC2DEEF6091}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{255A81E8-4531-4C57-8160-CFC2DEEF6091}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
