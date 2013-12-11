@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02资料管理器", "_02�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_03图片浏览", "_03图片浏览\_03图片浏览.csproj", "{882FC7F0-7A8D-41B9-99A0-085C631E3C54}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_04登陆案例", "_04登陆案例\_04登陆案例.csproj", "{C09E86D2-8DEB-4D83-A0DF-4B5AC966A10A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{882FC7F0-7A8D-41B9-99A0-085C631E3C54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{882FC7F0-7A8D-41B9-99A0-085C631E3C54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{882FC7F0-7A8D-41B9-99A0-085C631E3C54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C09E86D2-8DEB-4D83-A0DF-4B5AC966A10A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C09E86D2-8DEB-4D83-A0DF-4B5AC966A10A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C09E86D2-8DEB-4D83-A0DF-4B5AC966A10A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C09E86D2-8DEB-4D83-A0DF-4B5AC966A10A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

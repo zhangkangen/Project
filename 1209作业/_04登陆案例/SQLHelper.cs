@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Data;
 
 namespace _04登陆案例
 {
@@ -19,11 +20,11 @@ namespace _04登陆案例
 				{
 					conn.Open();
 					cmd.Parameters.AddRange(param);
-
 					return cmd.ExecuteNonQuery();
 				}
 			}
 		}
+
 		public static object ExecuteScalar(string sql, params SqlParameter[] param)
 		{
 			using(SqlConnection conn = new SqlConnection(strConn))
@@ -36,6 +37,7 @@ namespace _04登陆案例
 				}
 			}
 		}
+
 		public static SqlDataReader ExecuteReader(string sql, params SqlParameter[] param)
 		{
 			SqlConnection conn = new SqlConnection(strConn);
@@ -54,6 +56,17 @@ namespace _04登陆案例
 					throw e;
 				}
 			}
+		}
+
+		public static DataTable ExecuteAdapter(string sql, params SqlParameter[] param)
+		{
+			DataTable dt = new DataTable();
+			using(SqlDataAdapter sda = new SqlDataAdapter(sql, strConn))
+			{
+				sda.SelectCommand.Parameters.AddRange(param);
+				sda.Fill(dt);
+			}
+			return dt;
 		}
 	}
 }
