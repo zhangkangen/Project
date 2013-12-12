@@ -33,6 +33,7 @@
 			this.label2 = new System.Windows.Forms.Label();
 			this.txtPwd = new System.Windows.Forms.TextBox();
 			this.btnLogin = new System.Windows.Forms.Button();
+			this.btnSign = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -64,6 +65,7 @@
 			// 
 			this.txtPwd.Location = new System.Drawing.Point(122, 99);
 			this.txtPwd.Name = "txtPwd";
+			this.txtPwd.PasswordChar = '*';
 			this.txtPwd.Size = new System.Drawing.Size(140, 21);
 			this.txtPwd.TabIndex = 3;
 			// 
@@ -77,11 +79,22 @@
 			this.btnLogin.UseVisualStyleBackColor = true;
 			this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
 			// 
+			// btnSign
+			// 
+			this.btnSign.Location = new System.Drawing.Point(86, 203);
+			this.btnSign.Name = "btnSign";
+			this.btnSign.Size = new System.Drawing.Size(75, 23);
+			this.btnSign.TabIndex = 5;
+			this.btnSign.Text = "注册";
+			this.btnSign.UseVisualStyleBackColor = true;
+			this.btnSign.Click += new System.EventHandler(this.btnSign_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(321, 284);
+			this.Controls.Add(this.btnSign);
 			this.Controls.Add(this.btnLogin);
 			this.Controls.Add(this.txtPwd);
 			this.Controls.Add(this.label2);
@@ -101,6 +114,7 @@
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.TextBox txtPwd;
 		private System.Windows.Forms.Button btnLogin;
+		private System.Windows.Forms.Button btnSign;
 	}
 }
 

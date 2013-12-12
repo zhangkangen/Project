@@ -36,13 +36,13 @@ namespace _04登陆案例
 					int errorCount = Convert.ToInt32(item["errorcount"]);
 					int diffMinute = Convert.ToInt32(item["diffMinute"]);
 
-					if(diffMinute > 60 * 24)//超过一天
+					if(diffMinute > 60 * 24)//分钟差已经超过一天
 					{
-						ErrorCountReset(autoId);
+						ErrorCountReset(autoId);//重置错误次数
 					}
 					if(errorCount == 3 && diffMinute < 15)//登陆了三次，这次登陆少于15分钟
 					{
-						MessageBox.Show("你已经错误三次请" + (15 - diffMinute) + "分钟后再试");
+						MessageBox.Show("你今天已经输错三次！请" + (15 - diffMinute) + "分钟后再试");
 					}
 					else if(errorCount == 3 && diffMinute >= 15)
 					{
@@ -115,6 +115,54 @@ namespace _04登陆案例
 		{
 			string sql = "update users set errorcount=0 where autoid=" + p;
 			int n = SQLHelper.ExecuteNonQuery(sql);
+		}
+		/// <summary>
+		/// 点击注册
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void btnSign_Click(object sender, EventArgs e)
+		{
+			string name = txtName.Text;
+			string pwd = txtPwd.Text;
+			//先判断用户名是否存在
+			if(!loginIdExist(name))//用户不存在
+			{
+				string sql = "insert into users(loginid,loginpwd) values(@loginid,@loginPwd)";
+				SqlParameter[] param = {
+										   new SqlParameter("@loginid",name),
+										   new SqlParameter("@loginpwd",pwd)
+									   };
+				if(SQLHelper.ExecuteNonQuery(sql, param) > 0)
+				{
+					MessageBox.Show("注册成功");
+				}
+
+			}
+			else
+			{
+				MessageBox.Show("用户名已存在");
+			}
+		}
+		/// <summary>
+		/// 判断用户名是否存在的方法
+		/// </summary>
+		/// <param name="name">用户名</param>
+		/// <returns></returns>
+		private bool loginIdExist(string name)
+		{
+			string sql = "select count(*) from users where loginId=@loginId";//
+			SqlParameter[] param = {
+							   new SqlParameter("@loginId",name)
+						   };
+			if(Convert.ToInt32(SQLHelper.ExecuteScalar(sql, param)) > 0)
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
 		}
 	}
 }
