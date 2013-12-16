@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		//执行过程是从上到下的执行过程，因为函数并没有声明和定义，所以不能够预解析
+		//执行的过程也是一条一条的执行的
+		var x = 1, y = 0, z = 0;
+		var add = function (n) { n = n + 1; return n; };
+		y = add(x);
+		add = function (n) { n = n + 3; return n; };
+		z = add(x);
+		alert(y + '.....' + z);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,521 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>青春丿灬黑马的召唤师详情</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<META HTTP-EQUIV="pragma" CONTENT="no-cache"> 
+<!-- <META HTTP-EQUIV="Cache-Control" CONTENT="max-age=30">  -->
+<META HTTP-EQUIV="expires" CONTENT="0">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-store, must-revalidate"> 
+<link rel="stylesheet" href="http://img.lolbox.duowan.com/global.css?v=20130118" />
+<link rel="stylesheet" href="http://wan.duowan.com/static/css/god-icons.css" />
+<script src="http://www.duowan.com/public/assets/sys/js/jquery.js"></script>
+<script src="http://www.duowan.com/public/assets/sys/js/dww3.min.js"></script>
+<style>
+html,body{overflow:hidden}
+#windownbg{display:none;position:absolute;width:100%;height:100%;background:#000;top:0;left:0;}
+#windown-box{position:fixed;_position:absolute;border:5px solid #E9F3FD;background:#FFF;text-align:left;}
+#windown-title{position:relative;height:30px;border:1px solid #A6C9E1;overflow:hidden;background:url(images/tipbg.png) 0 0 repeat-x;}
+#windown-title h2{position:relative;left:10px;top:5px;font-size:14px;color:#666;}
+#windown-close{position:absolute;right:10px;top:8px;width:10px;height:16px;text-indent:-10em;overflow:hidden;background:url(images/tipbg.png) 100% -49px no-repeat;cursor:pointer;}
+#windown-content-border{position:relative;top:-1px;border:1px solid #A6C9E1;padding:5px 0 5px 5px;}
+#windown-content img,#windown-content iframe{display:block;}
+#windown-content .loading{position:absolute;left:50%;top:50%;margin-left:-8px;margin-top:-8px;}
+</style>
+</head>
+<body  scroll='no'>
+<div class="box">
+    <div class="box-hd">
+    <div class="fl crumbs"><div style='float:left;'><a href="playerSearch.php">首页</a><span>&gt;</span><a href="playerDetail.php?serverName=%E7%BD%91%E9%80%9A%E5%85%AD&playerName=%E9%9D%92%E6%98%A5%E4%B8%BF%E7%81%AC%E9%BB%91%E9%A9%AC">青春丿灬黑马（扭曲丛林）</a><span>&gt;</span>个人信息</div>
+   </div>
+    <div style="float:left;margin-left:10px"> 
+     
+   </div>
+    <!--分享模块 start -->
+    <div class="btns-fast">
+			<a title="返回" href="javascript:history.back();" onfocus="this.blur();" class="icons"><i></i></a>
+			<div class="share">
+				<a class="icons" href="#"><i></i></a>
+				<div class="links">
+					<a class="button_tsina" href="#"><span>新浪微博</span></a>
+					<a class="button_tqq" href="#"><span>腾讯微博</span></a>
+					<a class="button_qzone" href="#"><span>QQ空间</span></a>
+					<a class="screenshot" href="javascript:screenshot();"><span>本页截图</span></a>
+					<a class="copy-link" href="javascript:window.clipboardData.setData('Text',window.location.href);alert('链接复制成功');"><span>复制链接</span></a>
+				</div>
+			</div>
+				<script type="text/javascript" src="js/sns_share.js?v=2012091201" charset="utf-8"></script>
+				<script type="text/javascript">
+				var playerMostUsedHero = null;
+				playerMostUsedHero = "Orianna";				var jiathis_config= {
+						title: "#无盒子 不开撸# 我是青春丿灬黑马，我在使用LOL盒子。来看看我的战斗力有多少吧！",
+						appkey: {
+					        "tsina":"3629014272",
+					        "tqq":"801220649",
+					        "qzone":"100302822"
+					    },
+					    summary:" ",
+					    ralateuid:{
+					        "tsina":"2909042820"
+					    }
+				};
+				if (playerMostUsedHero)
+					jiathis_config.pic = 'http://lolbox.duowan.com/images/champions/' + playerMostUsedHero + '_120x120.png';
+				if (SnsShare) SnsShare.init();
+				</script>
+				<a title="刷新" class="icons refresh"  onfocus="this.blur();" href="javascript:location.reload();"><i></i></a>
+		</div>
+		<script>
+			function screenshot() {
+				$('.share').removeClass('hover');
+				setTimeout(function() {
+					window.location.href='lolboxphoto://网通六_青春丿灬黑马_玩家详情';
+				}, 200);
+			}
+			$('.box .box-hd .btns-fast .share').hover(function(){
+				$(this).addClass('hover');
+			},function(){
+				$(this).removeClass('hover');
+			});
+		</script>
+   <!--分享模块 end -->
+</div>
+  <div class="box-bd">
+    <div class="intro">
+      <div class="avatar">
+            <a href="matchList.php?serverName=%E7%BD%91%E9%80%9A%E5%85%AD&playerName=%E9%9D%92%E6%98%A5%E4%B8%BF%E7%81%AC%E9%BB%91%E9%A9%AC"><img src="http://img.lolbox.duowan.com/profileIcon/profileIcon25.jpg" /></a>
+            <span></span>
+	  <em>30</em>
+      </div>
+      <div class="text">
+        <div>
+       		<strong>
+       				        	<a href="playerDetail.php?serverName=%E7%BD%91%E9%80%9A%E5%85%AD&playerName=%E9%9D%92%E6%98%A5%E4%B8%BF%E7%81%AC%E9%BB%91%E9%A9%AC">青春丿灬黑马</a>
+	        	<a title="扫描二维码" href="qrcode.php?openmode=barcode&serverName=%E7%BD%91%E9%80%9A%E5%85%AD&playerName=%E9%9D%92%E6%98%A5%E4%B8%BF%E7%81%AC%E9%BB%91%E9%A9%AC" target="_blank"><img alt="扫描二维码" src="images/barcode.png?v=3"></a>
+	        		        </strong>
+        </div>  
+       <div title="此玩家在游戏中被队友给的好评数，只有使用lol盒子的玩家才可以进行评价">被赞 185 次</div>
+              </div>
+      <div class="fighting" title='点击查看战斗力详细计算方法'>
+        <p> <strong><a href='http://lol.duowan.com/1112/187633871943.html?&openmode=default' target='_blank' style='color:white;cursor: help;'>战斗力</a></strong> </p>
+        <p><em><span title='其中基础分1549 胜率加成分1032 胜场加成分429'>3010</span></em></p>
+      </div>
+    </div>
+    <div class="com-hero">
+        <h3>最近常用英雄 
+    	    	<span style="font-weight:normal;margin-left:20px">
+    	<!-- <a href="http://lolbox.duowan.com/heroesRank.php?serverName=%E7%BD%91%E9%80%9A%E5%85%AD&playerName=%E9%9D%92%E6%98%A5%E4%B8%BF%E7%81%AC%E9%BB%91%E9%A9%AC">高手出装</a> --></span>
+    		</h3>
+      <ul class="mod-pic">								 <li> <a href="matchList.php?serverName=%E7%BD%91%E9%80%9A%E5%85%AD&playerName=%E9%9D%92%E6%98%A5%E4%B8%BF%E7%81%AC%E9%BB%91%E9%A9%AC&hero=Orianna"> <img src="http://img.lolbox.duowan.com/champions/Orianna_40x40.jpg" alt="发条魔灵 43 次 点击查看相关比赛"  title="发条魔灵 43次"></a></li>
+				           </ul>
+    </div>
+    <div id="tab1" class="mod-tabs">
+      <div class="mod-tabs-hd">
+        <ul class="mod-tabs-trigger J_nav">
+          <li class="selected">匹配模式</li>
+          <li>S3排位赛</li>
+          <li >战斗力评估</li>
+          <li id="nav_wan" style="color:#FF0000; font-weight:500;" class="hide">大神陪玩</li>
+          <!-- <li onclick="loadEloRanks('', '');">本服排名</li>         -->
+        </ul>
+        <div class="act"><!-- <a title="请使用盒子打一场对应类型的比赛，即可更新您这种类型比赛的战绩数据，也能部分修正战斗力突然降低的问题" style="cursor: help;">数据不对?</a> &nbsp;&nbsp;--> 
+        	<!-- <a href="http://fankui.duowan.com/knowledgebase/articles/193131" target="_blank">数据不对？</a> -->
+        	&nbsp;
+        	首胜已可用 
+
+    	</div>
+      </div>
+
+      <div class="mod-tabs-bd J_content">
+        <div class="mod-tabs-content">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <th scope="col">类型</th>
+              <th scope="col">总场次</th>
+              <th scope="col">胜率</th>
+              <th scope="col">胜场</th>
+              <th scope="col">负场</th>
+              <!-- <th scope="col">逃跑</th> -->
+            </tr>  
+                       <tr>
+              <td>经典模式</td>
+              <td>
+              387</td>
+              <td>50.4%</td>
+              <td>195</td>
+              <td>192</td>
+              <!-- <td></td> -->
+              
+            </tr>
+                        <tr>
+              <td>人机对战</td>
+              <td>
+              63              </td>
+              <td>93.7%</td>
+              <td>59</td>
+              <td>4</td>
+              <!-- <td></td> -->
+            </tr>
+                        
+          </table>
+        </div>
+
+        <div class="mod-tabs-content hide">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <th scope="col">类型</th>
+              <th scope="col">段位/级别</th>
+              <th scope="col">胜点</th>
+              <th scope="col">总场次</th>
+              <th scope="col">胜率</th>
+              <th scope="col">胜场</th>
+              <th scope="col">负场</th>
+              <!-- <th scope="col">逃跑</th> -->
+              <!-- <th scope="col" title="所有赛季的总胜场">全赛季胜场</th>   -->     
+            </tr>
+                         <tr>
+             <td>5v5单双排</td> 
+                          <td>
+             	<span title="更新时间：1970-01-01 08:00">
+             		              	</span>
+             </td> 
+             <td>0</td>
+	                      <td>
+	              1	             </td>
+	              <td>0%</td>
+	              <td>0</td>
+	              <td>1</td>
+	              <!-- <td></td> -->
+	          <!-- <td></td> -->                                         
+            </tr>
+
+                      </table>
+        </div>
+                  <div class="mod-tabs-content hide">
+          <div class="combat-assess">
+              <p class="info">
+                <!-- <a href='http://lol.duowan.com/1301/222445786585.html' target='_blank' style='cursor: help;'>区间说明</a> -->
+                <!-- <a href="#">丨</a> -->
+                <a href='http://fankui.duowan.com/knowledgebase/articles/208098?&openmode=default' target='_blank' style='cursor: help;'>算法</a>
+                3010 = 1549(基础分) + 1032(胜率分) + 429(胜场分)
+                              </p>              <div class="combat-assess-content">
+                <p class="less-than-tip"><a target="_blank" href="http://fankui.duowan.com/knowledgebase/articles/208098?&openmode=default">第三赛季战斗力算法详细解释</a></p>
+              </div>
+                            <!-- 战斗力评价{ -->
+              <!--<div class="combat-assess-content ">
+              	                     <div class="combat-progress-bar">
+                    <div style="width:px;" class="player-progress">
+                    	<i class="down-arrow" style="display: block;"></i><i class="up-arrow" style="display: block;"></i>
+                    </div>
+                    
+                    <div id="player-fighting-power" style="; display: block;">
+                          <p><b></b></p>
+                    </div>
+                                        <div id="level-" class="level-tips" style="visibility: hidden;">
+                          <p></p>
+                    </div>
+                	                    <i class="level-tips-arrow" style="display: none; left: 365px;"></i>
+                    <i class="level-tip-1">2600</i>
+                    <i class="level-tip-2">3500</i>
+                    <i class="level-tip-3">4400</i>
+                    <i class="level-tip-4">5900</i>
+                    <i class="level-tip-5">7000</i>
+                    <i class="level-tip-6">9900</i>
+                  </div>
+              	
+              </div>-->
+              <!-- }战斗力评估 -->
+              <script>
+                $(function(){
+                  // var $playerTip    = $("#player-fighting-power");
+                  // var _tipWidth     = $playerTip.outerWidth();
+                  // var _barWidth     = $(".player-progress").width();
+                  // var _barOverWidth = $(".combat-progress-bar").width() - _barWidth;
+                  // if(_barWidth >= _tipWidth/2 && _barOverWidth > _tipWidth/2){
+                  //   $playerTip.css({"left":_barWidth - _tipWidth/2});
+                  // }else if(_barWidth <= _tipWidth/2 && _barOverWidth > _tipWidth/2){
+                  //   $playerTip.css({"left":"0"});
+                  // }else if(_barWidth > _tipWidth/2 && _barOverWidth <= _tipWidth/2){
+                  //   //$("#player-fighting-power").css({"left":(_barOverWidth + _barWidth) - _tipWidth});
+                  //   $playerTip.css({"left":"auto","right":"0"});
+                  // }
+
+               //  $(".combat-progress-bar").on('mousemove', function(event){
+               //    $("#player-fighting-power").hide();
+               //    $("i.down-arrow,i.up-arrow").hide();
+               //    var _x = event.pageX - $(this).offset().left;
+               //    if( _x > 5 && _x <= 585){
+               //      $("i.level-tips-arrow").show().css({"left":_x});
+               //    }
+               //    if( _x >0 && _x <= 56){
+               //      $(".level-tips").css({"visibility":"hidden"});
+               //      $("#level-1").css({"visibility":"visible","left":"0"});
+               //    }else if(_x >56 && _x <= 272){
+               //      $(".level-tips").css({"visibility":"hidden"});
+               //      $("#level-2").css({"visibility":"visible","left":"0"})
+               //    }else if(_x >272 && _x <= 408){
+               //      $(".level-tips").css({"visibility":"hidden"});
+               //      var _tipWidth = Math.round($("#level-3").outerWidth() / 2);
+               //      $("#level-3").css({"visibility":"visible","left":"50%","margin-left":-_tipWidth})
+               //    }else if(_x >408 && _x <= 493){
+               //      $(".level-tips").css({"visibility":"hidden"});
+               //      $("#level-4").css({"visibility":"visible","right":"0"})
+               //    }else if(_x >493 && _x <= 539){
+               //      $(".level-tips").css({"visibility":"hidden"});
+               //      $("#level-5").css({"visibility":"visible","right":"0"})
+               //    }else if(_x >539 && _x <= 575){
+               //      $(".level-tips").css({"visibility":"hidden"});
+               //      $("#level-6").css({"visibility":"visible","right":"0"})
+               //    }else if(_x >575 && _x <= 600){
+               //      $(".level-tips").css({"visibility":"hidden"});
+               //      $("#level-7").css({"visibility":"visible","right":"0"})
+               //    }
+               //  });
+
+               //  $(".combat-progress-bar").mouseout(function(){
+               //    $("#player-fighting-power").show();
+               //    $("i.down-arrow,i.up-arrow").show();
+               //    $("i.level-tips-arrow").hide();
+               //    $(".level-tips").css({"visibility":"hidden"});
+               // });
+                })
+              </script>
+          	              </div>
+        </div>
+                  
+        <!-- <div class="mod-tabs-content hide">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+             <th scope="col">战斗力</th>
+              <th scope="col">单双排5V5</th>
+              <th scope="col"></th>   
+            </tr>
+            <tr>
+           		<td id="zdlRank"></td>
+            	<td id="eloRanksRS5"></td>
+             	<td></td>        	           
+            </tr>
+        	             <tr>
+           		<td colspan="3"><p class="note" style="color: #999999">目前仅显示战斗力大于5000的玩家的排名数据、且最多显示前5万名。</p></td>  
+            </tr>
+        	          </table>
+        </div> -->
+         <div class="mod-tabs-content hide" id="content_wan">
+			 loading
+		 </div>
+      </div>
+    </div>
+    <script>
+          KISSDW.tabs("#tab1");
+    </script>
+    <div class="clearfix">
+      <div class="recent bd-r fl">
+        <div class="recent-hd">
+          <h3>最近比赛</h3>
+                    <a href="matchList.php?serverName=%E7%BD%91%E9%80%9A%E5%85%AD&playerName=%E9%9D%92%E6%98%A5%E4%B8%BF%E7%81%AC%E9%BB%91%E9%A9%AC">更多战报&gt;&gt;</a>
+      	      </div>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <th scope="col">英雄</th>
+            <th scope="col">模式</th>
+            <th scope="col">结果</th>
+            <th scope="col">时间</th>
+          </tr>
+          						<tr>
+				            <td><img  src="http://img.lolbox.duowan.com/champions/Orianna_24x24.jpg" title="发条魔灵" alt=""></td>
+				            <td>匹配赛</td>
+				            <td><em class="green">胜利</em></td>
+				            <td>12-15 20:50				            </td>
+				          </tr>
+											<tr>
+				            <td><img  src="http://img.lolbox.duowan.com/champions/Orianna_24x24.jpg" title="发条魔灵" alt=""></td>
+				            <td>匹配赛</td>
+				            <td><em class="green">胜利</em></td>
+				            <td>12-14 17:55				            </td>
+				          </tr>
+											<tr>
+				            <td><img  src="http://img.lolbox.duowan.com/champions/Orianna_24x24.jpg" title="发条魔灵" alt=""></td>
+				            <td>人机</td>
+				            <td><em class="red">失败</em></td>
+				            <td>12-14 15:50				            </td>
+				          </tr>
+											<tr>
+				            <td><img  src="http://img.lolbox.duowan.com/champions/Orianna_24x24.jpg" title="发条魔灵" alt=""></td>
+				            <td>匹配赛</td>
+				            <td><em class="green">胜利</em></td>
+				            <td>12-14 14:54				            </td>
+				          </tr>
+											<tr>
+				            <td><img  src="http://img.lolbox.duowan.com/champions/Orianna_24x24.jpg" title="发条魔灵" alt=""></td>
+				            <td>匹配赛</td>
+				            <td><em class="green">胜利</em></td>
+				            <td>12-14 14:07				            </td>
+				          </tr>
+											<tr>
+				            <td><img  src="http://img.lolbox.duowan.com/champions/Orianna_24x24.jpg" title="发条魔灵" alt=""></td>
+				            <td>匹配赛</td>
+				            <td><em class="red">失败</em></td>
+				            <td>12-13 19:31				            </td>
+				          </tr>
+											<tr>
+				            <td><img  src="http://img.lolbox.duowan.com/champions/Orianna_24x24.jpg" title="发条魔灵" alt=""></td>
+				            <td>匹配赛</td>
+				            <td><em class="red">失败</em></td>
+				            <td>12-13 18:51				            </td>
+				          </tr>
+					        </table>
+      </div>
+		<div class="recent fr">
+	        <div class="recent-hd" style="color:red">
+	        		           <!-- <h3>LOL迷你盒子</h3> -->
+	         <!-- <a href="qrcode.php?serverName=%E7%BD%91%E9%80%9A%E5%85%AD&playerName=%E9%9D%92%E6%98%A5%E4%B8%BF%E7%81%AC%E9%BB%91%E9%A9%AC" target="_blank">二维码扫描</a> -->
+			</div>
+			<div id="a3Ad" class="td-code clearfix" style="padding:6px 0 0 12px;">
+				<!-- <a href="http://torchforgaming.org/cn/?&ltype=ad" target="_blank">
+			        <img src="images/ad/290-210.jpg" />
+			    </a> -->
+			    <script src="http://market.duowan.com/duowan/227029561269.js"></script>
+		        <!-- <div class="pic" style="width:125px;">
+		          <img src="images/ad/mini_hezi.png" style="width:125px;" alt="LOL盒子" />
+		        </div>
+		        <p>* 游戏读条摇出对阵信息</p>
+		        <p>&nbsp;</p>
+				<p>* 英雄介绍出装配音皮肤</p>
+				<p>&nbsp;</p>
+				<p>* 论坛、最新动态、攻略</p>
+				<p>&nbsp;</p>
+		        <p><a href="http://lol.duowan.com/hezi/m" target="_blank" class="btn">盒子Android版</a></p> -->
+		    </div>
+		    <!--
+			<div class="record clearfix" style="width:314px;">
+					<ul class="clearfix">
+		                <li><i class="sub_head sub_head1"></i><em class="sub_name">战斗力</em><br>
+		              			            </ul>
+       				<p class="note">目前仅显示10万名以内的排名数据。</p>
+       				<p style="text-align: center; border: 1px solid rgb(221, 221, 221); padding: 5px; width: 90%; margin: 10px 0px 0px 15px;"><a href="http://lol.duowan.com/hezi/m/?ltype=ad" target="_blank" style="font-weight:bold">LOL迷你盒子</a>：手机逛论坛、加载时摇出对阵信息</p>
+
+				</div>-->
+	 </div>
+    </div>
+  </div>
+</div>
+<script>
+// if (confirm('我们检测到您可能修改了名字！\n您可将旧角色的评价及前两赛季的数据转移到新号。\n数据转移入口在战绩查询功能页的右上角的“改名数据服务器”')) {
+// 	window.location.href="changedPlayerRepair.php";
+// }
+</script>
+
+<script type="text/javascript">_hiido_no=0;_hiido_wid=["lbox"];</script>
+<script>
+function getCookie(cookieName) 
+{
+	  var cookieString = document.cookie;
+	  var start = cookieString.indexOf(cookieName + '=');
+	  // 加上等号的原因是避免在某些 Cookie 的值里有
+	  // 与 cookieName 一样的字符串。
+	  if (start == -1) // 找不到
+	    return null;
+	  start += cookieName.length + 1;
+	  var end = cookieString.indexOf(';', start);
+	  if (end == -1) 
+	  	return cookieString.substring(start);
+	   return   cookieString.substring(start, end);
+}
+function beenBlockedTimes(action)
+{
+      var boxPlayerName=decodeURI(getCookie('boxPlayerName'));
+      var boxServerName=decodeURI(getCookie('boxServerName'));
+      //alert(action + boxServerName + boxPlayerName);
+	  $.ajax(
+		{
+		  url: "webApi.php",
+		  data:{serverName:boxServerName,playerName:boxPlayerName,action:action},
+		  cache:false,
+		  success: function(msg){
+		  //	alert(msg);
+	        if(msg == 1){
+				location.reload();
+				
+	        }else if(msg == -1){
+			     alert('非法操作，请至少登陆一次游戏！');
+            }
+            
+		   },
+		  error:function(){
+			}
+		});	
+}
+
+
+function focusPlayers(targetServerName,targetPlayerName,action)
+{
+	 var boxPlayerName=decodeURI(getCookie('boxPlayerName'));
+     var boxServerName=decodeURI(getCookie('boxServerName'));
+     $.ajax(
+		{
+		  url: "webApi.php",
+		  data:{serverName:boxServerName,playerName:boxPlayerName,targetServerName:targetServerName,targetPlayerName:targetPlayerName,action:action},
+		  cache:false,
+		  success: function(msg){
+	        if(msg == '11'){
+				location.reload();
+				
+	        }else if(msg == -1){
+			     alert('非法操作，请至少登陆一次游戏！');
+            }
+            
+		   },
+		  error:function(){
+			}
+		});	
+}
+
+var playerEloRanksLoaded = false;
+
+function loadEloRanks(playerName, serverName) {
+	if (playerEloRanksLoaded == true)
+		return;
+
+	$.getJSON('ajaxGetPlayerEolRanks.php', {playerName:encodeURIComponent(playerName), serverName:encodeURIComponent(serverName)}, function(data){
+        if(data){
+			$('#zdlRank').text(data.zdlRank ? '第' + data.zdlRank + '位' : '无');
+			$('#eloRanksRS5').text(data.eloRanks.R_S_5 ? '第' + data.eloRanks.R_S_5 + '位' : '无');
+			// $('#eloRanksRP5').text(data.eloRanks.R_P_5 ? '第' + data.eloRanks.R_P_5 + '位' : '无');
+			// $('#eloRanksRS3').text(data.eloRanks.R_S_3 ? '第' + data.eloRanks.R_S_3 + '位' : '无');
+        }
+    });
+
+	playerEloRanksLoaded = true;
+}
+</script>
+<script>var stat_app_name = "boxgame_playerdetail"; var stat_uid = ""; var stat_oper_default = false; </script>
+<script src="http://assets.dwstatic.com/amkit/entry.js"></script>
+<script>
+seajs.use("p/statistics/main", function() {
+	$('#a3Ad a').each(function() {
+		if (!$(this).attr('data-stat')) return;
+		var words = $(this).attr('data-stat').split('_');
+		words[2] += '展示';
+		webUserOper.spStat({ app:stat_app_name, oper: words.join('_'), tar: $(this).find('img').attr('src') });
+	});
+});
+</script>
+<script src="http://www.duowan.com/duowan.js" type="text/javascript"></script>
+<script src="http://www.duowan.com/public/s/market_count.js" type="text/javascript"></script>
+<script src="http://assets.dwstatic.com/wan/E7BD91E9809AE585AD.js?11" type="text/javascript"></script>
+<!--
+<div style="display:none;">
+
+	<div id="layer_box">
+	
+		<img width="200" height="200" src="http://lolbox.duowan.com/doqrcode.php?serverName=%E7%BD%91%E9%80%9A%E5%85%AD&playerName=%E9%9D%92%E6%98%A5%E4%B8%BF%E7%81%AC%E9%BB%91%E9%A9%AC" />
+	</div>
+	
+</div>
+-->
+</body>
+</html>

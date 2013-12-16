@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+
+		//二、将一个字符串数组['乔丹', '科比', '加内特']，输出为以“|”分割的字符串。形如：'乔丹|科比|加内特'。不要使用JavaScript中的array.join('|')函数。自定义一个myJoin()函数。
+
+		//var names = ['乔丹', '科比', '加内特'];
+		//var str = MyJoin(names);
+		//function MyJoin(names) {
+		//	var str = '';
+		//	for (var i = 0; i < names.length-1; i++) {
+		//		str += names[i]+'|';
+		//	}
+		//	str += names[names.length - 1];
+		//	return str;
+		//}
+		//alert(str);
+
+		//三、将一个字符串数组的元素的顺序进行反转。把["3","a","8","haha"]反转成["haha","8","a","3"]。不要使用JavaScript中的reverse()反转函数。自定义一个myReverse()函数。提示：第i个和第length-i-1个进行交换。
+		//注意：数组是引用类型。
+
+		//var arr = ["3", "a", "8", "haha"];
+		//MyReverse(arr);
+		//function MyReverse(arr) {
+		//	for (var i = 0; i < arr.length/2; i++) {
+		//		var temp = arr[i];
+		//		arr[i] = arr[arr.length - i - 1];
+		//		arr[arr.length - 1 - i] = temp;
+		//	}
+		//}
+		//alert(arr);
+
+		//用方法求数组的平均值
+		//var arr = [1, 23, 3, 45, 6, 77, 88, 98, 34];
+		//var avg = GetAvg(arr);
+		//function GetAvg(arr) {
+		//	var sum = 0;
+		//	for (var i = 0; i < arr.length; i++) {
+		//		sum += arr[i];
+		//	}
+		//	return sum / arr.length;
+		//}
+		//alert(avg);
+
+		//求数组中的最大值，用函数
+		//var arr = [1, 23, 3, 45, 6, 77, 88, 98, 34];
+		//var max = GetMax(arr);
+		//function GetMax(arr) {
+		//	var max = arr[0];
+		//	for (var i = 0; i < arr.length; i++) {
+		//		if (max<arr[i]) {
+		//			max = arr[i];
+		//		}
+		//	}
+		//	return max;
+		//}
+		//alert(max);
+
+		//var sum = 0;
+		//for (var i = 0; i < arr.length; i++) {
+		//	sum += arr[i];
+		//}
+		//alert(sum / arr.length);
+		var arr = [1, 23, 3, 45, 6, 77, 88, 98, 34];
+		for (var i = 0; i < arr.length-1; i++) {
+			for (var j = 0; j < arr.length - 1 - i; j++) {
+				if (arr[j]>arr[j+1]) {
+					var temp = arr[j];
+					arr[j] = arr[j + 1];
+					arr[j + 1] = temp;
+				}
+			}
+		}
+		alert(arr);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

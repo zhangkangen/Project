@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		//数字升序排列
+		//var numbers = [1, 23, 34, 45, 56, 65, 32, 22, 11, 44, 87, 33];
+		//mySort(numbers,function (x, y) { return x - y; });
+
+		//字符数组按字符的长度升序排列
+		//var names = ['科比', '乔丹丹', '姚大明的名字很长', '老虎伍兹'];
+		//mySort(names, function (x, y) { return x.length - y.length });
+
+		//数字降序排列
+		var numbers = [1, 23, 34, 45, 56, 65, 32, 22, 11, 44, 87, 33];
+		mySort(numbers, function (x, y) { return y - x; })
+
+
+		alert(numbers);
+		function mySort(arr, fn) {
+			for (var i = 0; i < arr.length - 1; i++) {
+				for (var j = 0; j < arr.length - 1 - i; j++) {
+					if (fn(arr[j], arr[j + 1]) > 0) {
+						var temp = arr[j];
+						arr[j] = arr[j + 1];
+						arr[j + 1] = temp;
+					}
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

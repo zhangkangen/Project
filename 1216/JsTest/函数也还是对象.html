@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		function getUserName() {
+			var first_name = 'zhongke';
+			var last_name = 'yang';
+			return first_name + last_name;
+		}
+		//var user_name = getUserName();//此时为函数getUserName()执行完毕后的返回值
+		//alert(user_name);
+
+		//user_name此时就相当于函数getUserName
+		//var user_name = getUserName;
+		//alert(user_name);//就相当于获取函数的源代码
+		//alert(getUserName.toString());
+		//alert(user_name.length);//获取函数的参数个数
+		//var res = user_name();
+		//alert(res);//相当于调用该函数
+		alert(getUserName.apply());
+		alert(getUserName.call());
+	</script>
+</head>
+<body>
+
+</body>
+</html>

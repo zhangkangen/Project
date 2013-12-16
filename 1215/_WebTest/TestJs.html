@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">	
+
+	</script>
+	<script type="text/javascript">
+		var arr = ["3", "a", "8", "haha"];
+		MyReverse(arr);
+		var str = '';
+		for (var i = 0; i < arr.length; i++) {
+			str += arr[i];
+		}
+		alert(str);
+		//交换的方法
+		function MyReverse(arr) {
+			for (var i = 0; i < arr.length / 2; i++) {
+				var temp = arr[i];
+				arr[i] = arr[arr.length - 1 - i];
+				arr[arr.length - 1 - i] = temp;
+			}
+		}
+	</script>
+	<script type="text/javascript">
+		var arr = ['乔丹', '科比', '加内特'];
+		var str = MyJoin(arr);
+		alert(str);
+		function MyJoin(arr) {
+			var str = '';
+			for (var i = 0; i < arr.length - 1; i++) {
+				str += arr[i] + '|';
+			}
+			str += arr[arr.length - 1];
+			return str;
+		}
+	</script>
+	<script type="text/javascript">
+		var arr = [12, 34, 45, 56, 67, 35, 99, 12, 77];
+		var avg = GetAvg(arr);
+		alert(avg);
+		function GetAvg(arr) {
+			var sum = 0;
+			for (var i = 0; i < arr.length; i++) {
+				sum += arr[i];
+			}
+			return sum / arr.length;
+		}
+	</script>
+	<script type="text/javascript">
+		var arr = [12, 34, 45, 56, 67, 35, 99, 12, 77];
+		arr = SortArr(arr);
+		var str = '';
+		for (var i = 0; i < arr.length; i++) {
+			str += arr[i] + ' ';
+		}
+		alert(str);
+		function SortArr(arr) {
+			for (var i = 0; i < arr.length - 1; i++) {
+				for (var j = 0; j < arr.length - 1 - i; j++) {
+					if (arr[j] > arr[j + 1]) {
+						var temp = arr[j];
+						arr[j] = arr[j + 1];
+						arr[j + 1] = temp;
+					}
+				}
+			}
+			return arr;
+		}
+	</script>
+	<script type="text/javascript">
+		var arr = [12, 34, 45, 56, 67, 77, 88];
+		var max = GetMax(arr);
+		function GetMax(arr) {
+			var max = arr[0];
+			for (var i = 0; i < arr.length; i++) {
+				if (max < arr[i]) {
+					max = arr[i];
+				}
+			}
+			return max;
+		}
+		alert(max);
+		//var max = 0;
+		//for (var i = 0; i < arr.length; i++) {
+		//	if (max < arr[i]) {
+		//		max = arr[i];
+		//	}
+		//}
+		//alert(max);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
