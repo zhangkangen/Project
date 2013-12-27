@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<style type="text/css">
+		#dv1 {
+			width: 300px;
+			height: 300px;
+			background-color: blue;
+			overflow: hidden;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function () {
+			document.getElementById('btn1').onclick = function () {
+				var intervarId = setInterval(function () {
+					dvObj = document.getElementById('dv1');
+					var h = dvObj.offsetHeight;
+					h = h - 2;
+					dvObj.style.height = h + 'px';
+					if (h < 0) {
+						dvObj.style.display = 'none';
+						clearInterval(intervarId);
+					}
+				}, 10)
+			};
+			document.getElementById('btn2').onclick = function () {
+				document.getElementById('dv1').style.display = 'block';
+				var intervarId = setInterval(function () {
+					dvObj = document.getElementById('dv1');
+					var h = dvObj.offsetHeight;
+					h = h + 2;
+					dvObj.style.height = h + 'px';
+					if (h == 300) {
+						clearInterval(intervarId);
+					}
+				}, 10)
+			};
+		};
+	</script>
+</head>
+<body>
+	<input type="button" name="name" value="隐藏" id="btn1" />
+	<input type="button" name="name" value="显示" id="btn2" />
+	<div id="dv1">
+		<table align="center">
+			<tr>
+				<td>用户名：</td>
+				<td><input type="text" name="name" value="" /></td>
+			</tr>
+			<tr>
+				<td>密码：</td>
+				<td><input type="password" name="name" value="" /></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="name" value="登陆" /></td>
+				<td><input type="reset" name="name" value="取消" /></td>
+			</tr>
+		</table>
+
+
+	</div>
+</body>
+</html>

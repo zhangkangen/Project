@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script src="javascripts/jquery-1.10.1.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$(':checkbox').click(function () {
+				var msg = [];
+				$(':checkbox:checked').each(function (k, v) {
+					msg[msg.length] = $(v).val();
+				});
+				$('p').text('一共选择了' + msg.length + '项，风别是：' + msg);
+			});
+		});
+	</script>
+</head>
+<body>
+	<input type="checkbox" name="name" value="踢足球" />踢足球
+	<input type="checkbox" name="name" value="打篮球" />打篮球
+	<input type="checkbox" name="name" value="乒乓球" />乒乓球
+	<p></p>
+</body>
+</html>

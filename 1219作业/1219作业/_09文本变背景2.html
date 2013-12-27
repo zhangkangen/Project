@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		window.onload = function () {
+			var inputs = document.getElementsByTagName('input');
+			for (var i = 0; i < inputs.length; i++) {
+				inputs[i].onfocus = function () {
+					this.style.backgroundColor = 'yellow';
+				};
+				inputs[i].onblur = function () {
+					this.style.backgroundColor = 'white';
+				};
+			}
+		};
+	</script>
+</head>
+<body>
+	<input type="text" name="name" value="" />
+	<input type="text" name="name" value="" />
+	<input type="text" name="name" value="" />
+	<input type="text" name="name" value="" />
+	<input type="text" name="name" value="" />
+	<input type="text" name="name" value="" />
+	<input type="text" name="name" value="" />
+	<input type="text" name="name" value="" />
+</body>
+</html>

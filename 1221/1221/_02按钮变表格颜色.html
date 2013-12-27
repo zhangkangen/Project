@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<style type="text/css">
+		td {
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function () {
+			document.getElementById('btn').onclick = function () {
+				var trs = document.getElementsByTagName('tr');
+				for (var i = 0; i < trs.length; i++) {
+					if (trs[i].rowIndex % 2 == 0) {
+						trs[i].style.backgroundColor = 'red';
+					} else {
+						trs[i].style.backgroundColor = 'yellow';
+					}
+				}
+			};
+		};
+	</script>
+</head>
+<body>
+	<input type="button" name="name" value="变" id="btn" />
+	<table border="1" cellpadding="0" cellspacing="0" width="200" height="200">
+		<tr>
+			<td>nihao</td>
+			<td>nihao</td>
+			<td>nihao</td>
+		</tr>
+		<tr>
+			<td>nihao</td>
+			<td>nihao</td>
+			<td>nihao</td>
+		</tr>
+		<tr>
+			<td>nihao</td>
+			<td>nihao</td>
+			<td>nihao</td>
+		</tr>
+		<tr>
+			<td>nihao</td>
+			<td>nihao</td>
+			<td>nihao</td>
+		</tr>
+		<tr>
+			<td>nihao</td>
+			<td>nihao</td>
+			<td>nihao</td>
+		</tr>
+		<tr>
+			<td>nihao</td>
+			<td>nihao</td>
+			<td>nihao</td>
+		</tr>
+	</table>
+</body>
+</html>

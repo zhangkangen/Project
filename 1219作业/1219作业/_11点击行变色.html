@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<script type="text/javascript">
+		window.onload = function () {
+			var trs = document.getElementsByTagName('tr');
+			for (var i = 0; i < trs.length; i++) {
+				trs[i].onclick = function () {
+					for (var i = 0; i < trs.length; i++) {
+						trs[i].style.backgroundColor = 'white';
+					}
+					this.style.backgroundColor = 'yellow';
+				};
+			}
+		};
+	</script>
+</head>
+<body>
+	<table border="1" width="200" height="100">
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+</body>
+</html>

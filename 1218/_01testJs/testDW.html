@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		//document.write('<h1>你好吗，我很好</h1>');
+		//function Person() {
+		//	this.Name = '杨中科';
+		//	this.Age = 12;
+		//	this.Email = 'k@126.com';
+		//	this.say = function () {
+		//		alert('我叫' + this.Name + '今年' + this.Age + 'Email:' + this.Email);
+		//	}
+		//}
+		//var p = new Person();
+		//p.say();
+		//alert(p instanceof Object);
+
+		var Person = function (name, age, gender) {
+			this.Name = name;
+			this.Age = age;
+			this.Gender = gender;
+		}
+		Person.prototype.sayHi = function () {
+			alert(this.Name + '        ' + this.Age + '             ' + this.Gender);
+		}
+
+		var p = new Person('zxk', 22, '男');
+		var Student = function () {
+
+		}
+		Student.prototype = p;
+
+		var s = new Student();
+		s.Name = 'ls';
+		s.Age = 22;
+		s.Gender = '女';
+
+		s.sayHi();
+	</script>
+</head>
+<body>
+	<input type="button" name="name" value="点击试试" onclick="alert('Welcome!')" />
+</body>
+</html>

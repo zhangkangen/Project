@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<script src="js/jquery-1.10.1.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('#ul1 li').mouseover(function () {
+				$(this).css('backgroundColor', 'red').siblings().css('backgroundColor', '');
+			}).click(function () {
+				$(this).css('fontSize', '30px').siblings().css('fontSize', '');
+			});
+		});
+	</script>
+</head>
+<body>
+	<ul id="ul1">
+		<li>公牛</li>
+		<li>小牛</li>
+		<li>雄鹿</li>
+		<li>灰熊</li>
+	</ul>
+</body>
+</html>

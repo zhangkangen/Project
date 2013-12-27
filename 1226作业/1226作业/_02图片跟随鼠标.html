@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script src="javascripts/jquery-1.10.1.js"></script>
+	<script type="text/javascript">
+		$(function (e) {
+			$(document).mousemove(function (e) {
+				//将图片的坐标设置为当前鼠标位置的坐标
+				$('#img1').css({ 'left': e.pageX + 'px', 'top': e.pageY + 'px' });
+			});
+		});
+	</script>
+	<style type="text/css">
+		#img1 {
+			/*将图片的position设置为absolute才能够移动图片;*/
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<img id="img1" src="images/1.gif" />
+</body>
+</html>

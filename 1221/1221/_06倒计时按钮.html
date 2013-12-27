@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		window.onload = function () {
+			var intervarId = null;
+			var flag = 9;
+			var btn = document.getElementById('btn');
+			btn.disabled = true;
+			intervarId = setInterval(function () {
+				btn.value = '请仔细阅读协议(' + flag + ')';
+				flag--;
+				if (flag < 0) {
+					clearInterval(intervarId);
+					btn.disabled = false;
+					btn.value = '同意';
+					btn.onclick = function () {
+						alert('你点了同意');
+					};
+				}
+			}, 1000);
+		};
+	</script>
+</head>
+<body>
+	<input type="button" name="name" value="请仔细阅读协议(10)" id="btn" />
+</body>
+</html>

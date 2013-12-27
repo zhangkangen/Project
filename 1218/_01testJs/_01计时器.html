@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		var intervalId = null;
+
+		function stopTime() {
+			if (intervalId !== null) {
+				clearInterval(intervalId);
+			}
+		}
+
+		function onTimeClick() {
+			intervalId = setInterval(function () {
+				var txtObj = document.getElementById('txt1');
+				txtObj.value = parseInt(txtObj.value)+1;
+			}, 10);
+		}
+
+	</script>
+</head>
+<body>
+	<input type="text" id="txt1" name="name" value="0" />
+	<input type="button" id="btn" name=" " value="开始" onclick="onTimeClick();" />
+	<input type="button" name="name" value="停止" onclick="stopTime();" />
+</body>
+</html>

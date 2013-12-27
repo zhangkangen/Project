@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		window.onload = function () {
+			//窗体加载或先让图片显示当前时间对应的图片
+			var imgObj = document.getElementById('img1');
+			var h = new Date().getHours();
+			var m = new Date().getMinutes();
+
+			if (h < 10 && m < 10) {
+				imgObj.src = 'images\\0' + h + '_' + '0' + m + '.jpg';
+			} else if (h < 10 && m >= 10) {
+				imgObj.src = 'images\\0' + h + '_' + m + '.jpg';
+			} else if (h > 10 && m < 10) {
+				imgObj.src = 'images\\' + h + '_' + '0' + m + '.jpg';
+			} else {
+				imgObj.src = 'images\\' + h + '_' + m + '.jpg';
+			}
+			//每隔一秒判断当前时间分钟是否改变，如果改变的话，就更改时间
+			setInterval(function () {
+				m = new Date().getMinutes();
+				h = new Date().getHours();
+				var strSrc = imgObj.src;
+				var index = strSrc.indexOf('_');
+				var imgM = strSrc.substr(index + 1, 2);
+				if (m !== parseInt(imgM)) {
+					if (h < 10 && m < 10) {
+						imgObj.src = 'images\\0' + h + '_' + '0' + m + '.jpg';
+					} else if (h < 10 && m >= 10) {
+						imgObj.src = 'images\\0' + h + '_' + m + '.jpg';
+					} else if (h > 10 && m < 10) {
+						imgObj.src = 'images\\' + h + '_' + '0' + m + '.jpg';
+					} else {
+						imgObj.src = 'images\\' + h + '_' + m + '.jpg';
+					}
+				}
+			}, 1000);
+		};
+	</script>
+</head>
+<body>
+	<img src="#" alt="图片路径错误" id="img1" />
+</body>
+</html>

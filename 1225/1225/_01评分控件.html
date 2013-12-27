@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script src="scripts/jquery-1.10.1.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('#tb1 td').mouseover(function () {
+				//鼠标移动到的td的index小于3显示浅色星星
+				if ($('#tb1 td').index($(this)) < 3) {
+					$(this).css('background-position', '0 -24px').prevAll().css('background-position', '0 -24px');
+
+				} else {//索引大于等于3的时候显示深色的星星
+					$(this).css('background-position', '0 -48px').prevAll().css('background-position', '-0px -48px');
+				}
+				//当前之后的所有星星变成空心的星星
+				$(this).nextAll().css('background-position', '0 0');
+				//去除所有的td的自定义属性
+				$('#tb1 td').removeAttr('isclicked');
+			}).mouseout(function () {
+				if ($(this).attr('isclicked') != 'yes') {
+					$(this).css('background-position', '0 0').prevAll().css('background-position', '0 0');
+					$(this).nextAll().css('background-position', '0 0');
+				}
+
+			}).click(function () {
+				$(this).attr('isclicked', 'yes');
+				$(this).siblings().removeAttr('isclicked');
+			});
+		});
+	</script>
+	<style type="text/css">
+		td {
+			background-image: url(star.gif);
+			position: relative;
+			width: 24px;
+			height: 24px;
+			background-position: 0 0;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<table id="tb1">
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+</body>
+</html>

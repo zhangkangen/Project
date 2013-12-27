@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script src="scripts/jquery-1.10.1.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('#btn1').click(function () {
+				$(':checkbox').prop('checked', true);
+			});
+			$('#btn2').click(function () {
+				$(':checkbox').prop('checked', false);
+			});
+			$('#btn3').click(function () {//两种设置属性的方法
+				//第一种方法
+				//$(':checkbox').each(function (k, v) {
+				//	$(v).prop('checked', !$(v).prop('checked'));
+				//});
+
+				//第二种方法，通过方法改变属性的值
+				$(':checkbox').prop('checked', function (index, value) {
+					return !value;
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	<input type="button" name="name" value="全选" id="btn1" />
+	<input type="button" name="name" value="全不选" id="btn2" />
+	<input type="button" name="name" value="反选" id="btn3" />
+	<input type="checkbox" name="name" value="" />
+	<input type="checkbox" name="name" value="" />
+	<input type="checkbox" name="name" value="" />
+	<input type="checkbox" name="name" value="" />
+	<input type="checkbox" name="name" value="" />
+	<input type="checkbox" name="name" value="" />
+	<input type="checkbox" name="name" value="" />
+	<input type="checkbox" name="name" value="" />
+	<input type="checkbox" name="name" value="" />
+	<input type="checkbox" name="name" value="" />
+	<input type="checkbox" name="name" value="" />
+	<input type="checkbox" name="name" value="" />
+	<input type="checkbox" name="name" value="" />
+	<input type="checkbox" name="name" value="" />
+</body>
+</html>

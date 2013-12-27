@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<style type="text/css">
+		div {
+			border: 1px solid red;
+			width: 200px;
+			height: 200px;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function () {
+			document.getElementById('btn1').onclick = function () {
+				//var txtInput = document.createElement('input');
+				//txtInput.type = 'text';
+				//document.getElementById('dv1').appendChild(txtInput);
+				var aLink = document.createElement('a');
+				aLink.href = 'http://www.baidu.com';
+				aLink.innerHTML = '百度';
+				aLink.title = '百度一下你就知道';
+				aLink.target = '_blank';
+				document.getElementById('dv1').appendChild(aLink);
+			};
+			document.getElementById('btn2').onclick = function () {
+				var btnInput = document.createElement('input');
+				btnInput.type = 'button';
+				btnInput.value = '我是新加的按钮';
+				document.getElementById('dv1').appendChild(btnInput);
+			};
+			document.getElementById('btnClear').onclick = function () {
+				var div1 = document.getElementById('dv1');
+				while(div1.firstChild) {
+					div1.removeChild(div1.firstChild);
+				}
+			};
+		};
+	</script>
+</head>
+<body>
+	<div id="dv1"></div>
+	<input type="button" name="name" value="添加一个文本" id="btn1" />
+	<input type="button" name="name" value="添加一个按钮" id="btn2" />
+	<input type="button" name="name" value="清空" id="btnClear" />
+</body>
+</html>

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<style type="text/css">
+		.c1 {
+			background-color: red;
+		}
+
+		.c2 {
+			color: yellow;
+		}
+
+		.c3 {
+			border: 1px solid blue;
+		}
+
+		.c4 {
+			font: 50px 楷体;
+			width: 200px;
+			height: 50px;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function () {
+			document.getElementById('btn1').onclick = function () {
+				document.getElementById('txt1').focus();
+			};
+			document.getElementById('btn2').onclick = function () {
+				document.getElementById('txt1').blur();
+			};
+			document.getElementById('btn3').onclick = function () {
+				document.getElementById('txt1').className += ' c4';
+			};
+		};
+	</script>
+</head>
+<body>
+	<input type="text" class="c1 c2 c3" name="name" value="" id="txt1" />
+	<input type="button" name="name" value="获取焦点" id="btn1" />
+	<input type="button" name="name" value="失去焦点" id="btn2" />
+	<input type="button" name="name" value="增加样式" id="btn3" />
+</body>
+</html>

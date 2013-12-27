@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		window.onload = function () {
+			document.getElementById('btn1').onclick = function () {
+				document.getElementById('txt1').focus();
+			};
+			document.getElementById('btn2').onclick = function () {
+				document.getElementById('txt1').blur();
+			};
+		};
+	</script>
+</head>
+<body>
+	<input type="text" name="name" value="" id="txt1" />
+	<input type="button" name="name" value="获取焦点" id="btn1" />
+	<input type="button" name="name" value="失去焦点" id="btn2" />
+
+</body>
+</html>

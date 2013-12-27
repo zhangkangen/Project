@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		window.onload = function () {
+			var datas = {
+				"山东": ["青岛", "济南", "烟台"],
+				"山西": ["大同", "太原", "运城"],
+				"陕西": ["西安", "咸阳", "汉中"]
+			};
+			var selectObj = document.getElementById('s1');
+			for (var key in datas) {
+				var optObj = document.createElement('option');
+				optObj.innerHTML = key;
+				optObj.value = key;
+				//将创建的子元素添加到select中
+				selectObj.appendChild(optObj);
+			}
+			//默认添加第一个省
+			for (var j = 0; j < datas['山东'].length; j++) {
+				var opt1Obj = document.createElement('option');
+				opt1Obj.innerHTML = datas['山东'][j];
+				document.getElementById('s2').appendChild(opt1Obj);
+			}
+
+			//给第一个select添加onchange事件
+			selectObj.onchange = function () {
+				//先清除s2中的所有的元素
+				document.getElementById('s2').innerHTML = "";
+				var keyV = this.value;
+				for (var i = 0; i < datas[keyV].length; i++) {
+					var opt1Obj = document.createElement('option');
+					opt1Obj.innerHTML = datas[keyV][i];
+					document.getElementById('s2').appendChild(opt1Obj);
+				}
+
+			};
+
+		};
+	</script>
+</head>
+<body>
+	省：<select id="s1"></select>
+	市：<select id="s2"></select>
+</body>
+</html>

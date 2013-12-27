@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		window.onload = function () {
+			document.getElementById('btn').onclick = function () {
+				var msg = '苏坤18999141365杨中科13490987654赵晓虎15210998254。中国移动：10086中国联通10010中国电信10000中国工商银行95588';
+				var reg = /\d+/g;
+				var res = null;
+				while ((res = reg.exec(msg)) != null) {
+					alert(res);
+				}
+			};
+
+		};
+	</script>
+</head>
+<body>
+	<input type="button" name="name" value="匹配电话号码" id="btn" />
+</body>
+</html>

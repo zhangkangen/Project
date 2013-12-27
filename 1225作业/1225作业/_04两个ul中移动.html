@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script src="javascripts/jquery-1.10.1.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('ul li').mouseover(function () {
+				$(this).css('backgroundColor', 'red');
+			}).mouseout(function () {
+				$(this).css('backgroundColor', '');
+			}).click(function () {
+				$(this).css('backgroundColor', '').appendTo($(this).parent().siblings('ul'));
+			});
+		});
+	</script>
+</head>
+<body>
+	<ul>
+		<li>篮网</li>
+		<li>勇士</li>
+		<li>热火</li>
+		<li>骑士</li>
+	</ul>
+	<hr />
+	<ul></ul>
+</body>
+</html>

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>传智播客</title>
+	<script type="text/javascript">
+		window.onload = function () {
+			var direction = 'left';//设置标记
+			var intervarId = null;
+			intervarId = setInterval(function () {//计时器循环执行
+				var tit = document.title;//这个必须写到方法里面，因为title更改之后要重新获取title
+				if (direction == 'left') {
+					document.title = tit.substr(1) + tit.charAt(0);
+				} else {
+					document.title = tit.charAt(tit.length - 1) + tit.substr(0, tit.length - 1);
+				}
+			}, 1000);
+			document.getElementById('right').onclick = function () {
+				direction = 'right';
+			};
+			document.getElementById('left').onclick = function () {
+				direction = 'left';
+			};
+			//document.getElementById('stop').onclick = function () {
+			//	if (intervarId != null) {
+			//		clearInterval(intervarId);
+			//	}
+			//};
+		};
+	</script>
+</head>
+<body>
+	<input type="button" name="name" value="左" id="left" />
+	<input type="button" name="name" value="右" id="right" />
+	<!--<input type="button" name="name" value="停止" id="stop" />-->
+</body>
+</html>

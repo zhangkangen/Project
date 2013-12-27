@@ -1,0 +1,81 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script src="js/jquery-1.10.1.js"></script>
+	<script type="text/javascript">
+		//    第一行是表头，所以显示大字体（fontSize=30px），最后一行是汇总，所以显示红色字体。正文的前三行是前三名，所以显示傻大的字体（28）表格的偶数行是红色色背景。
+		//思考：用Dom实现；用jQuery实现。对比差异！
+		$(function () {
+			$('#btn').click(function () {
+				$('#table1 tr:first').css('fontSize', '30px');
+				$('#table1 tr:last').css('color', 'red');
+				$('#table1 tr:gt(0):lt(3)').css('fontSize', '28px');
+				$('#table1 tr:odd').css('backgroundColor', 'red');
+			});
+		});
+	</script>
+</head>
+<body>
+	<input type="button" name="name" value="button" id="btn" />
+	<table id="table1" border="1">
+		<tr>
+			<td>
+				姓名
+			</td>
+			<td>
+				成绩
+			</td>
+		</tr>
+		<tr>
+			<td>
+				tom
+			</td>
+			<td>
+				100
+			</td>
+		</tr>
+		<tr>
+			<td>
+				jim
+			</td>
+			<td>
+				99
+			</td>
+		</tr>
+		<tr>
+			<td>
+				john
+			</td>
+			<td>
+				98
+			</td>
+		</tr>
+		<tr>
+			<td>
+				jason
+			</td>
+			<td>
+				97
+			</td>
+		</tr>
+		<tr>
+			<td>
+				aaa
+			</td>
+			<td>
+				97
+			</td>
+		</tr>
+		<tr>
+			<td>
+				平均分
+			</td>
+			<td>
+				98
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

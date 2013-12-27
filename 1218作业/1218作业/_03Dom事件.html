@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		function Delete() {
+			if (confirm('确定要删除吗？')) {
+				alert('删除成功！');
+			} else {
+				alert('取消删除');
+			}
+		}
+		function goToBing() {
+			window.location.href = 'http://www.baidu.com';
+		}
+	</script>
+</head>
+<body>
+	<input type="text" name="name" value="" id="txt1" />
+	<input type="button" name="name" value="button" onclick="Delete();" />
+	<input type="button" name="name" value="btn" onclick="goToBing();" />
+</body>
+</html>

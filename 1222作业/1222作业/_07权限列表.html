@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<style type="text/css">
+		select {
+			width: 300px;
+			height: 300px;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function () {
+			//选中的移动
+			document.getElementById('btn1').onclick = function () {
+				moveSome(document.getElementById('s1'), document.getElementById('s2'));
+			};
+			//全部移动
+			document.getElementById('btn2').onclick = function () {
+				moveAll(document.getElementById('s1'), document.getElementById('s2'));
+			};
+
+			document.getElementById('btn3').onclick = function () {
+				moveAll(document.getElementById('s2'), document.getElementById('s1'));
+			};
+			document.getElementById('btn4').onclick = function () {
+				moveSome(document.getElementById('s2'), document.getElementById('s1'));
+			};
+			function moveSome(s1, s2) {
+				var opts = s1.getElementsByTagName('option');
+				for (var i = opts.length - 1; i >= 0; i--) {
+					if (opts[i].selected) {
+						s2.insertBefore(opts[i], s2.firstChild);
+					}
+				}
+			}
+			function moveAll(s1, s2) {
+				while (s1.firstChild) {
+					s2.appendChild(s1.firstChild);
+				}
+			}
+		};
+	</script>
+</head>
+
+<body>
+	<select id="s1" multiple="multiple">
+		<option value="value">增加</option>
+		<option value="value">删除</option>
+		<option value="value">修改</option>
+		<option value="value">查询</option>
+	</select>
+	<input type="button" name="name" value=">" id="btn1" />
+	<input type="button" name="name" value=">>" id="btn2" />
+	<input type="button" name="name" value="<<" id="btn3" />
+	<input type="button" name="name" value="<" id="btn4" />
+	<select id="s2" multiple="multiple"></select>
+</body>
+</html>

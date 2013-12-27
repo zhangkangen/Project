@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script src="javascripts/jquery-1.10.1.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			var datas = {
+				'百度': 'http://www.baidu.com',
+				'google': 'http://www.google.com',
+				'搜狐': 'http://www.sohu.com',
+				'网易': 'http://www.163.com',
+			};
+			$('#btn1').click(function () {
+				var tb = $('<table border="1"></table>');
+				for (var key in datas) {
+					$('<tr><td>' + key + '</td><td><a href="' + datas[key] + '">' + key + '</a></td></tr>').appendTo(tb);
+				}
+				tb.appendTo('body');
+			});
+		});
+	</script>
+</head>
+<body>
+	<input type="button" name="name" value="button" id="btn1" />
+</body>
+</html>

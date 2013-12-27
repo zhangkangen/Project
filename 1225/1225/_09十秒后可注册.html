@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script src="scripts/jquery-1.10.1.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			var count = 9;
+			var intervarId = setInterval(function () {
+				$('#btn').val('请仔细阅读协议(' + count + ')');
+				count--;
+				if (count < 0) {
+					$('#btn').val('同意');
+					$('#btn').prop('disabled', false);
+					clearInterval(intervarId);
+				}
+			}, 1000);
+		});
+	</script>
+</head>
+<body>
+	<input type="button" name="name" disabled="disabled" value="请仔细阅读协议(10)" id="btn" />
+</body>
+</html>

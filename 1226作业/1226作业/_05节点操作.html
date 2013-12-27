@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script src="javascripts/jquery-1.10.1.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('#btn').click(function (e) {
+				//替换所有的br为hr
+				//$('br').replaceWith('<hr/>');
+
+				//用hr替换所有的br
+				//$('<hr/>').replaceAll('br');
+				//创建一个span替换所有的br
+				$('<span style="background-color:yellow;">---------华丽的分割线------</span>').replaceAll('br');
+			});
+		});
+	</script>
+</head>
+<body>
+	<input type="button" name="name" value="button" id="btn" />
+	<br />
+	窗前明月光，<br />
+	疑是地上霜。<br />
+	举头望明月，<br />
+	低头思故乡。<br />
+</body>
+</html>

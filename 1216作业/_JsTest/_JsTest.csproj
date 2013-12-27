@@ -62,6 +62,10 @@
     <Content Include="_02冒泡排序.html" />
     <Content Include="_03indexOfTest.html" />
     <Content Include="_04mySort.html" />
+    <Content Include="_05数组反转.html" />
+    <Content Include="_06函数调用.html" />
+    <Content Include="_07js数组.html" />
+    <Content Include="_08testIE.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

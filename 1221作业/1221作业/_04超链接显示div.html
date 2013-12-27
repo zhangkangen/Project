@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<style type="text/css">
+		#dv1 {
+			display: none;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function () {
+			document.getElementById('a1').onmouseover = function () {
+				var dvObj = document.getElementById('dv1');
+				dvObj.style.display = 'block';
+				dvObj.style.backgroundColor = 'blue';
+				dvObj.style.position = 'absolute';
+				dvObj.style.left = this.offsetLeft + 'px';
+				dvObj.style.top = this.offsetTop + this.offsetHeight + 'px';
+			};
+			document.getElementById('a1').onmouseout = function () {
+				document.getElementById('dv1').style.display = 'none';
+			};
+		};
+	</script>
+</head>
+<body>
+	<p>哈哈哈哈哈哈哈哈哈哈哈哈</p>
+	<p>哈哈哈哈哈哈哈哈哈哈哈哈</p>
+	<p>哈哈哈哈哈哈哈哈哈哈哈哈</p>
+	<p>哈哈哈哈哈哈哈哈哈哈哈哈</p>
+	<p>哈哈哈哈哈哈哈哈哈哈哈哈</p>
+	<p>哈哈哈哈哈哈哈哈哈哈哈哈</p>
+	<p>哈哈哈哈 <a id="a1" href="#">杨中科</a>	哈哈哈哈哈</p>
+	<div id="dv1">
+		<img src="yzk.png" alt="Alternate Text" />
+		<p>姓名：杨中科</p>
+		<p>性别：男</p>
+	</div>
+</body>
+</html>

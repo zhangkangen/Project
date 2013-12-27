@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script src="scripts/jquery-1.10.1.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('#btn1').click(function () {
+				//var txt = $('#txt1').val();
+				//var txtarea = $('#txtarea1').val();
+				$('<tr><td>' + $('#txt1').val() + '</td><td>' + $('#txtarea1').val() + '</td></tr>').appendTo('#tb1');
+			});
+		});
+	</script>
+</head>
+<body>
+	<table id="tb1" border="1">
+		<tr>
+			<td>喵喵</td>
+			<td>沙发</td>
+		</tr>
+		<tr>
+			<td>狗狗</td>
+			<td>板凳</td>
+		</tr>
+	</table>
+	<input type="text" name="name" value="" id="txt1" /><br />
+	<textarea id="txtarea1"></textarea><br />
+	<input type="button" name="name" value="评论" id="btn1" />
+</body>
+</html>

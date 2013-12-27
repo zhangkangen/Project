@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		window.onload = function () {
+			var tb = document.createElement('table');
+			//tb.border = '1px solid red';
+			//tb.cellPadding = '2px';
+			//tb.cellSpacing = '2px';
+			var tr = tb.insertRow(-1);
+			for (var i = 0; i < 5; i++) {
+				var td = tr.insertCell(-1).innerHTML = '☆';
+			}
+			document.body.appendChild(tb);
+
+			var tds = document.getElementsByTagName('td');
+			for (var j = 0; j < tds.length; j++) {
+				tds[j].onclick = function () {
+					for (var k = 0; k <= this.cellIndex; k++) {
+						tds[k].innerHTML = '★';
+					}
+					for (var q = tds.length - 1 ; q > this.cellIndex; q--) {
+						tds[q].innerHTML = '☆';
+					}
+				};
+			}
+
+		};
+	</script>
+</head>
+<body>
+
+</body>
+</html>

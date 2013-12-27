@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>传智博客传智博客</title>
+	<script type="text/javascript">
+		var direction = 'left';
+		var txt = document.title;
+
+		function bodyOnLoad() {
+			setInterval(function () {
+				if (direction == 'left') {
+					var firstChar = txt.charAt(0);
+					var others = txt.subStr(1, txt.length - 1);
+					document.title = others + txt;
+				} else {
+					var lastChar = txt.charAt(txt.length - 1);
+					var others = txt.subStr(0, txt.length - 1);
+					document.title = lastChar + others;
+				}
+			}, 1000);
+		}
+
+		function btnRightScroll() {
+			direction = 'right';
+		}
+
+		function btnLeftScroll() {
+			direction = 'left';
+		}
+
+	</script>
+</head>
+<body onload="bodyOnLoad();">
+	<input type="button" name="name" value="右滚动" onclick="bodyRightScroll();" />
+	<input type="button" name="name" value="左滚动" onclick="bodyLeftScroll();" />
+	<input type="button" name="name" value="停止" onclick="stopScroll();" />
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		window.onload = function () {
+			var txtObj = document.getElementById('txt1');
+			txtObj.onmouseover = function () {
+				if (this.getAttribute('hasContent') == 'no' || this.getAttribute('hascontent') == null) {
+					this.style.color = 'black';
+					this.value = '';
+				}
+			};
+			txtObj.onmouseout = function () {
+				if (this.value == '') {
+					this.style.color = 'gray';
+					this.value = '请输入搜索关键字'
+					this.setAttribute('hascontent', 'no')
+				} else {
+					this.setAttribute('hasContent', 'has');
+				}
+			};
+
+		};
+	</script>
+	<style type="text/css">
+		#txt1 {
+			color: gray;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" name="name" value="请输入搜索关键词" id="txt1" />
+</body>
+</html>

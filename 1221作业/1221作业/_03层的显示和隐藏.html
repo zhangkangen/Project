@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<style type="text/css">
+		#dv1 {
+			width: 300px;
+			height: 300px;
+			background-color: green;
+			overflow: hidden;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function () {
+			//获取div
+			var dvObj = document.getElementById('dv1');
+			var btnObj = document.getElementById('btn');
+			var ckObj = document.getElementById('ck1');
+			var aLink = document.getElementById('a1');
+
+			if (dvObj.style.display == 'none') {
+				btnObj.value = '显示';
+				ckObj.checked = false;
+				aLink.innerHTML = '显示';
+			} else {
+				btnObj.value = '隐藏';
+				ckObj.checked = true;
+				aLink.innerHTML = '隐藏';
+			}
+
+			//显示dv的事件
+			document.getElementById('btn').onclick = function () {
+				if (this.value == '显示') {
+					dvObj.style.display = '';
+					this.value = '隐藏';
+					ckObj.checked = true;
+					aLink.innerHTML = '隐藏';
+				} else if (this.value == '隐藏') {
+					dvObj.style.display = 'none';
+					this.value = '显示';
+					ckObj.checked = false;
+					aLink.innerHTML = '显示';
+				}
+			};
+			//复选框
+			document.getElementById('ck1').onclick = function () {
+				if (this.checked == true) {
+					dvObj.style.display = '';
+					btnObj.value = '隐藏';
+					aLink.innerHTML = '隐藏';
+				} else {
+					dvObj.style.display = 'none';
+					btnObj.value = '显示';
+					aLink.innerHTML = '显示';
+				}
+			};
+			document.getElementById('a1').onclick = function () {
+				if (this.innerHTML=='隐藏') {
+					dvObj.style.display = 'none';
+					ckObj.checked = false;
+					btnObj.value = '显示';
+					aLink.innerHTML = '显示';
+				} else {
+					dvObj.style.display = '';
+					ckObj.checked = true;
+					btnObj.value = '隐藏';
+					aLink.innerHTML = '隐藏';
+				}
+				
+			};
+		};
+	</script>
+</head>
+<body>
+	<input type="button" name="name" value="显示" id="btn" />
+	<input type="checkbox" name="name" checked="checked" value="显示" id="ck1" />显示
+	<br />
+	<a href="#" id="a1">显示</a>
+	<div id="dv1">
+		<p>哈哈哈</p>
+
+		<p>哈哈哈</p>
+		<p>哈哈哈</p>
+		<p>哈哈哈</p>
+
+		<p>哈哈哈</p>
+		<p>哈哈哈</p>
+
+		<p>哈哈哈</p>
+		<p>哈哈哈</p>
+		<p>哈哈哈</p>
+		<p>哈哈哈</p>
+
+		<p>哈哈哈</p>
+		<p>哈哈哈</p>
+		<p>哈哈哈</p><p>哈哈哈</p>
+		<p>哈哈哈</p>
+		<p>哈哈哈</p>
+	</div>
+</body>
+</html>

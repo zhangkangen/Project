@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script src="js/jquery-1.10.1.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('#btn').click(function () {
+				$('body').toggleClass('by');
+			});
+		});
+	</script>
+	<style type="text/css">
+		.by {
+			background-color: black;
+		}
+
+		.default {
+			background-color: white;
+		}
+	</style>
+</head>
+<body class="default">
+	<input type="button" name="name" value="切换" id="btn" />
+</body>
+</html>

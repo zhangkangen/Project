@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		window.onload = function () {
+			var des = 4;
+			var intervarId = setInterval(function () {
+				var btnObj = document.getElementById('btn');//获取按钮
+				if (des > 0) {
+					btnObj.value = '请仔细阅读协议(' + des + ')';//计时开始计时，设置当前button的value值
+					des--;
+				} else {//五秒之后
+					//设置button的value值
+					btnObj.value = '同意';
+					//按钮可以点击
+					btnObj.disabled = false;
+					//暂停计时
+					clearInterval(intervarId);
+				}
+			}, 1000);
+		};
+	</script>
+</head>
+<body>
+	<input type="button" name="name" value="请仔细阅读协议(5)" id="btn" disabled="disabled" />
+</body>
+</html>

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script src="jquery-1.10.1.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("#tb1 td").mouseover(function () {
+				var curtd = $(this);
+				var tr = curtd.parent();
+				var tdindex = tr.children().index(curtd);
+				$("td:lt(" + (tdindex + 1) + ")", tr).html("<img src='starFill.jpg'/>");
+				curtd.nextAll().html("<img src='starEmpty.jpg'/>");
+			});
+			$("#tb1 td").html("<img src='starEmpty.jpg'/>").css("cursor", "pointer");
+		});
+
+
+	</script>
+	<style type="text/css">
+		.po1 {
+			position: relative;
+			left: 30px;
+			top: 30px;
+		}
+	</style>
+</head>
+<body>
+	<table id="tb1">
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+</body>
+</html>

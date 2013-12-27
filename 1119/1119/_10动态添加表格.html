@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		window.onload = function () {
+			document.getElementById('btn').onclick = function () {
+				var dict = {
+					'百度': 'http://www.baidu.com',
+					'新浪': 'http://www.sina.com.cn',
+					'谷歌': 'http://www.g.cn',
+					'必应': 'http://www.bing.com'
+				};
+				//创建一个table控件
+				var tbObj = document.createElement('table');
+				tbObj.border = '1px';//设置控件的边框
+				tbObj.cellPadding = '2px';//设置内边界
+				tbObj.cellSpacing = '2px';//设置外边界
+				for (var key in dict) {
+					var tr = document.createElement('tr');//创建一个tr
+					var td1 = document.createElement('td');//创建一个td
+					td1.innerHTML = key;
+					var td2 = document.createElement('td');//创建一个td
+					td2.innerHTML = '<a href="' + dict[key] + '" target="_blank">' + key + '</a>';
+					tr.appendChild(td1);//tr中添加td
+					tr.appendChild(td2);//tr中添加td
+					tbObj.appendChild(tr);//将tr添加到table中
+				}
+				document.body.appendChild(tbObj);//body中添加table
+			};
+		};
+	</script>
+</head>
+<body>
+	<input type="button" name="name" value="添加表格" id="btn" />
+</body>
+</html>

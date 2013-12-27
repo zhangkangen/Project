@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		window.onload = function () {
+			document.getElementById('btn1').onclick = function () {
+				var reg = /^[0-9a-zA-Z._-]+@[0-9a-zA-Z]+(\.[a-zA-Z]+)+$/g;
+				if (reg.test(document.getElementById('txt1').value)) {
+					document.getElementById('txt1').style.backgroundColor = 'green';
+				} else {
+					document.getElementById('txt1').style.backgroundColor = 'red';
+				}
+			};
+		};
+	</script>
+</head>
+<body>
+	<input type="text" name="name" value="" id="txt1" />
+	<input type="button" name="name" value="判断" id="btn1" />
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		var intervarId = null;
+		window.onload = function () {
+			document.getElementById('btn').onclick = function () {
+				document.getElementById('txt1').value = '仔细看';
+			};
+			document.getElementById('btnClear').onclick = function () {
+				document.getElementById('txt1').value = '';
+			};
+			document.getElementById('btnTime').onclick = function () {
+				intervarId = setInterval(function () {
+					document.getElementById('txt1').value++;
+				}, 1000);
+			};
+			document.getElementById('btnStopTime').onclick = function () {
+				if (intervarId != null) {
+					clearInterval(intervarId);
+				}
+			}
+		};
+	</script>
+	
+</head>
+<body>
+	<input type="text" name="name" value="" id="txt1" />
+	<input type="button" name="name" value="button" id="btn" />
+	<input type="button" name="name" value="buttonClear" id="btnClear" />
+	<input type="button" name="name" value="计时" id="btnTime" />
+	<input type="button" name="name" value="暂停" id="btnStopTime" />
+</body>
+</html>

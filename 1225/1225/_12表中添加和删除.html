@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script src="scripts/jquery-1.10.1.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('#btn').click(function () {
+				var tr = $('<tr><td>' + $('#txt1').val() +
+					'</td><td>' + $('#txt2').val() +
+					'</td></tr>');
+				var btn = $('<input type="button" value="删除" />');
+				btn.click(function () {
+					$(this).parent().parent().remove();
+				});
+				var td = $('<td></td>');
+				btn.appendTo(td);
+				td.appendTo(tr);
+				tr.appendTo('#tb1');
+			});
+
+		});
+	</script>
+	<style type="text/css">
+		fieldset {
+			border: 1px solid gray;
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+	<fieldset>
+		<legend>增加人员信息</legend>
+		姓名：<input type="text" name="name" value="" id="txt1" /><br />
+		年龄：<input type="text" name="name" value="" id="txt2" /><br />
+		<input type="button" name="name" value="增加" id="btn" />
+	</fieldset>
+	<table border="1" id="tb1">
+		<tr>
+			<th>姓名</th>
+			<th>性别</th>
+			<th>删除</th>
+		</tr>
+	</table>
+</body>
+</html>

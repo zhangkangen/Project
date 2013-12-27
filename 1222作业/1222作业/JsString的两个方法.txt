@@ -1,0 +1,8 @@
+search方法：返回正则表达式查找的匹配的第一个字符串的位置
+
+replace(rgExp,replaceText)
+返回根据正则表达式进行文字替换的字符串的复制，
+rgExp
+要写的正则表达式的语句，也可以是string对象或文字，如果不是正则表达式对象，
+replaceText
+是一个string对象字符串，是替换或的内容

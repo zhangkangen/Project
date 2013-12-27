@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="javascripts/jquery-1.10.1.js"></script>
+	<title></title>
+	<script type="text/javascript">
+		$(function () {
+			$('#btn1').click(function () {
+				$('#s1 :selected').appendTo('#s2');
+			});
+			$('#btn2').click(function () {
+				$('#s1 option').appendTo('#s2');
+			});
+			$('#btn3').click(function () {
+				$('#s2 option').appendTo('#s1'); 
+			});
+			$('#btn4').click(function () {
+				$('#s2 :selected').appendTo('#s1');
+			});
+		});
+	</script>
+	<style type="text/css">
+		select {
+			width: 200px;
+			height: 200px;
+		}
+	</style>
+</head>
+<body>
+	<select id="s1" multiple="multiple">
+		<option value="value">增加</option>
+		<option value="value">删除</option>
+		<option value="value">修改</option>
+		<option value="value">查询</option>
+	</select>
+	<input type="button" name="name" value=">" id="btn1" />
+	<input type="button" name="name" value=">>" id="btn2" />
+	<input type="button" name="name" value="<<" id="btn3" />
+	<input type="button" name="name" value="<" id="btn4" />
+	<select id="s2" multiple="multiple"></select>
+</body>
+</html>

@@ -1,0 +1,18 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title></title>
+</head>
+<body>
+	<form action="PersonEdit.ashx" method="post">
+		<input type="hidden" name="Action" value="AddNew" />
+		<input type="hidden" name="Save" value="true" />
+		<table>
+			<tr><td>姓名：</td><td><input type="text" name="Name" value="$Data.uname" /></td></tr>
+			<tr><td>年龄：</td><td><input type="text" name="Age" value="$Data.uage" /></td></tr>
+			<tr><td>身高：</td><td><input type="text" name="Email" value="$Data.uheight" /></td></tr>
+			<tr><td></td><td><input type="submit" value="保存" /></td></tr>
+		</table>
+	</form>
+</body>
+</html>

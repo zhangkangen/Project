@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<style type="text/css">
+		div {
+			display: none;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function () {
+			//设置a标签的鼠标悬浮事件
+			document.getElementById('a1').onmouseover = function () {
+				var dvObj = document.getElementById('dv1');
+				dvObj.style.display = 'block';
+				dvObj.style.position = 'absolute';
+				var x = this.offsetLeft;
+				var y = this.offsetTop + this.offsetHeight;
+				dvObj.style.left = x + 'px';
+				dvObj.style.top = y + 'px';
+			};
+			//设置a标签的鼠标离开事件
+			document.getElementById('a1').onmouseout = function () {
+				document.getElementById('dv1').style.display = 'none';
+			};
+		};
+	</script>
+</head>
+<body>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+
+	<br />
+	<br />
+	<br />
+
+	<br />
+	<br />
+	<p>传智博客的联合创始人是<a id="a1" href="#">杨中科</a>，和他的小伙伴们，</p>
+	<div id="dv1">
+		<img src="yzk.png" alt="Alternate Text" />
+	</div>
+</body>
+</html>

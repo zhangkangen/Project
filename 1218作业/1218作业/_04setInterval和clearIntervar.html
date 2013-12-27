@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		var intervarId = null;
+		function btnBegin() {
+			intervarId = setInterval(function () {
+				document.getElementById('txt1').value++;
+			}, 1000);
+			document.getElementById('btn1').disabled = true;
+		}
+		function btnStop() {
+			if (intervarId != null) {
+				clearInterval(intervarId);
+			}
+			document.getElementById('btn1').disabled = false;
+		}
+	</script>
+</head>
+<body>
+	<input type="text" name="name" value="" id="txt1" />
+	<input type="button" name="name" value="btnBegin" id="btn1" onclick="btnBegin();" />
+	<input type="button" name="name" value="btnStop" onclick="btnStop();" />
+</body>
+</html>

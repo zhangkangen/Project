@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>传智博客</title>
+	<script type="text/javascript">
+		var direction = 'left';
+
+		function bodyOnload() {
+			setInterval(function () {
+				var tit = document.title;
+				var others;
+				if (direction == 'left') {
+					var firstChar = tit.charAt(0);
+					others = tit.substr(1);
+					document.title = others + firstChar;
+				} else {
+					var lastChar = tit.charAt(tit.length - 1);
+					others = tit.substr(0, tit.length - 1);
+					document.title = lastChar + others;
+				}
+			}, 1000);
+		}
+		function setLeft() {
+			window.direction = 'left';
+		}
+		function setRight() {
+			window.direction = 'right';
+		}
+	</script>
+</head>
+<body onload="bodyOnload();">
+	<input type="button" name="name" value="左" onclick="setLeft();" />
+	<input type="button" name="name" value="右" onclick="setRight();" />
+</body>
+</html>

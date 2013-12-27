@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		var timeOutId = null;
+		function f() {
+			timeOutId = setTimeout(function () {
+				alert('Hello');
+			}, 4000);
+		}
+		function f1() {
+			if (timeOutId != null) {
+				clearTimeout(timeOutId);
+				alert('timeout   Clear');
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="button" name="name" value="button" onclick="f();" />
+	<input type="button" name="name" value="stop" onclick="f1();" />
+</body>
+</html>

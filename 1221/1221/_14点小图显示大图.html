@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+
+		window.onload = function () {
+			var dict = {
+				'images/1-1.jpg': ['images/1.jpg', '张三', '178cm'],
+				'images/2-1.jpg': ['images/2.jpg', '李四', '170cm'],
+				'images/3-1.jpg': ['images/3.jpg', '王五', '168cm']
+			};
+			document.getElementById('btn').onclick = function () {
+
+				var tb = document.createElement('table');
+				var tr = tb.insertRow(-1);
+				for (var key in dict) {
+					var td = tr.insertCell(-1);
+					td.innerHTML = '<img src="' + key + '"/>';
+					td.id = key;
+
+				}
+				document.getElementById('dv1').appendChild(tb);
+
+				var tds = document.getElementsByTagName('td');
+				for (var i = 0; i < tds.length; i++) {
+					tds[i].onmouseover = function () {
+						var dvObj = document.getElementById('dv2');
+						dvObj.style.display = 'block';
+						dvObj.style.position = 'absolute';
+						dvObj.style.left = this.offsetLeft + 'px';
+						dvObj.style.top = this.offsetTop + this.offsetHeight + 'px';
+						document.getElementById('img1').src = dict[this.id][0];
+						document.getElementById('p1').innerHTML = '姓名：' + dict[this.id][1];
+						document.getElementById('p2').innerHTML = '身高：' + dict[this.id][2];
+					};
+					tds[i].onmouseout = function () {
+						document.getElementById('dv2').style.display = 'none';
+					};
+				}
+			};
+
+
+		};
+	</script>
+	<style type="text/css">
+		#dv2 {
+			display: none;
+			margin: 0px auto;
+		}
+	</style>
+</head>
+<body>
+	<div id="dv1">
+		<input type="button" name="name" value="显示" id="btn" />
+
+	</div>
+	<div id="dv2">
+		<img id="img1" src="#" alt="大图片" />
+		<p id="p1"></p>
+		<p id="p2"></p>
+	</div>
+</body>
+</html>

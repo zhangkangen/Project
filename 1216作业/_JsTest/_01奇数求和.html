@@ -11,24 +11,18 @@
 		//	}
 		//}
 		//alert(sum);
-		//var sum = getSum();
-		//alert(sum);
-		//function getSum() {
-		//	var n = 0;
-		//	for (var i = 1; i <= 100; i++) {
-		//		if (i % 2 !== 0) {
-		//			n += i;
-		//		}
-		//	}
-		//	return n;
-		//}
-		var arr = ['sdf', '好', 'a', '不好', 'gjk'];
-		for (var i = 0; i < arr.length / 2; i++) {
-			var temp = arr[i];
-			arr[i] = arr[arr.length - 1 - i];
-			arr[arr.length - 1 - i] = temp;
+		var sum = getSum();
+		alert(sum);
+		function getSum() {
+			var n = 0;
+			for (var i = 1; i <= 100; i++) {
+				if (i % 2 !== 0) {
+					n += i;
+				}
+			}
+			return n;
 		}
-		alert(arr);
+		
 	</script>
 </head>
 <body>

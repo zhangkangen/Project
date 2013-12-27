@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		window.onload = function () {
+			var inputs = document.getElementsByTagName('input');//获取tag为input的标签
+			for (var i = 0; i < inputs.length; i++) {
+				if (inputs[i].type == 'button') {//去过这个标签的type是button
+					inputs[i].onclick = function () {//给button注册事件
+						//先将所有的button按钮的value设置为‘哈哈’
+						for (var j = 0; j < inputs.length; j++) {
+							if (inputs[j].type == 'button') {
+								inputs[j].value = '哈哈';
+							}
+						}
+						//将当前点击的按钮的value设置为‘呜呜’
+						this.value = '呜呜';
+					};
+				}
+			}
+		};
+	</script>
+</head>
+<body>
+	<input type="text" name="name" value=" " />
+	<input type="text" name="name" value=" " />
+	<input type="text" name="name" value=" " />
+	<input type="button" name="name" value="哈哈" />
+	<input type="button" name="name" value="哈哈" />
+	<input type="button" name="name" value="哈哈" />
+	<input type="button" name="name" value="哈哈" />
+	<input type="button" name="name" value="哈哈" />
+	<input type="button" name="name" value="哈哈" />
+	<input type="button" name="name" value="哈哈" />
+	<input type="button" name="name" value="哈哈" />
+	<input type="button" name="name" value="哈哈" />
+	<input type="button" name="name" value="哈哈" />
+	<input type="button" name="name" value="哈哈" />
+	<input type="button" name="name" value="哈哈" />
+	<input type="button" name="name" value="哈哈" />
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		var intervarId = null;
+		window.onload = function () {
+			document.getElementById('btnBegin').onclick = function () {
+				intervarId = setInterval(function () {
+					document.getElementById('txt1').value++;
+				}, 1000);
+			};
+			document.getElementById('btnStop').onclick = function () {
+				if (intervarId != null) {
+					clearInterval(intervarId);
+				}
+			};
+			document.getElementById('displayText').onclick = function () {
+				document.getElementById('txt1').value = '仔细看';
+			};
+			document.getElementById('clearText').onclick = function () {
+				document.getElementById('txt1').value = '';
+			};
+		};
+	</script>
+</head>
+<body>
+	<input type="text" id="txt1" name="name" value="" />
+	<input type="button" id="btnBegin" name="name" value="begin" />
+	<input type="button" id="btnStop" name="name" value="stop" />
+	<input type="button" name="name" value="显示文字" id="displayText" />
+	<input type="button" name="name" value="清除文字" id="clearText" />
+</body>
+</html>

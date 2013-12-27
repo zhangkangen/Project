@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script src="javascripts/jquery-1.10.1.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('#btn').click(function () {
+				var datas = {
+					'images/1-1.jpg': ['images/1.jpg', '张三', '23'],
+					'images/2-1.jpg': ['images/2.jpg', '李四', '22'],
+					'images/3-1.jpg': ['images/3.jpg', '王五', '21']
+				};
+				for (var key in datas) {
+					$('<img src="' + key + '"/>').attr('key', key).appendTo('#dv1');
+				}
+				$('img').mouseover(function () {
+					var mykey = $(this).attr('key')
+					$('#dvcontent').append('<img src="' + datas[mykey][0] + '"/><p>姓名：' + datas[mykey][1] + '</p><p>性别：' + datas[mykey][2] + '</p>').css({ 'display': 'block', 'left': $(this).offset().left, 'top': $(this).offset().top + $(this).height() + 5, 'border': '1px solid blue' });
+				}).mouseout(function () {
+					$('#dvcontent').empty().css('displey', 'none');
+				});
+			});
+		});
+	</script>
+	<style type="text/css">
+		#dvcontent {
+			position: absolute;
+			display: none;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div id="dv1">
+		<input type="button" name="name" value="显示图片" id="btn" />
+	</div>
+	<div id="dvcontent"></div>
+</body>
+</html>

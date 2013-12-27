@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		window.onload = function () {
+			document.getElementById('btn').onclick = function () {
+				var dict = {
+					'百度': 'http://www.baidu.com',
+					'新浪': 'http://www.sina.com.cn',
+					'谷歌': 'http://www.g.cn'
+				};
+				var tb = document.createElement('table');
+				tb.border = '1px slide red';
+				tb.cellPadding = '2px';
+				tb.cellSpacing = '2px';
+
+				for (var key in dict) {
+					var tr = tb.insertRow(-1);
+					tr.insertCell(-1).innerHTML = key;
+					tr.insertCell(-1).innerHTML = '<a href="' + dict[key] + '" target="_blank">' + key + '</a>';
+				}
+
+				document.body.appendChild(tb);
+			};
+		};
+	</script>
+</head>
+<body>
+	<input type="button" name="name" value="添加" id="btn" />
+</body>
+</html>

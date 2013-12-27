@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script src="jquery-1.10.1.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			//将数组元素中的值翻倍后返回
+			//var arr = [1, 3, 5, 7, 9, 2, 4, 6, 8];
+			//var arrNew = $.map(arr, function (x, y) {
+			//	return x * 2;
+			//});
+			//alert(arrNew);
+
+			//将数组中索引大于2的元素的值翻倍后返回
+			var arr = [1, 3, 5, 7, 9, 2, 4, 6, 8];
+			var arrNew = $.map(arr, function (x, y) {
+				if (y > 2) {
+					return x * 2;
+				}
+				return x;
+			});
+
+			alert(arrNew);
+		});
+	</script>
+</head>
+<body>
+
+</body>
+</html>

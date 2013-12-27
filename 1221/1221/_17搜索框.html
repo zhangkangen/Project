@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<style type="text/css">
+		#txt1 {
+			color: gray;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function () {
+			var txtInput = document.getElementById('txt1');
+			txtInput.onmouseover = function () {
+				this.value = '';
+				this.style.color = 'black';
+			};
+			txtInput.onblur = function () {
+				if (this.value=='') {
+					this.style.color = 'gray';
+					this.value = '请输入搜索关键字';
+				}
+			};
+		};
+	</script>
+</head>
+<body>
+	<input id="txt1" type="text" name="name" value="请输入搜索关键字" />
+</body>
+</html>

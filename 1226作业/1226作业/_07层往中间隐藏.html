@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<style type="text/css">
+		#dv1 {
+			width: 300px;
+			height: 500px;
+			left: 400px;
+			top: 100px;
+			position: absolute;
+			background-color: blue;
+		}
+	</style>
+	<script src="javascripts/jquery-1.10.1.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('#btn').click(function () {
+				//隐藏div
+				//$('#dv1').hide(3000);
+
+				//$('#dv1').slideUp(3000);
+				//$('#dv1').slideToggle(3000);
+				$('#dv1').animate({ 'top': '300px', 'height': '0' }, 3000);
+			});
+			$('#btn2').click(function () {
+				$('#dv1').animate({ 'top': '100px', 'height': '500px' }, 3000);
+			});
+		});
+	</script>
+</head>
+<body>
+	<input type="button" name="name" value="button" id="btn" />
+	<input type="button" name="name" value="显示" id="btn2" />
+	<div id="dv1"></div>
+</body>
+</html>

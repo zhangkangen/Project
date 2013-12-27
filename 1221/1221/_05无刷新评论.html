@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<script type="text/javascript">
+		window.onload = function () {
+			document.getElementById('btn').onclick = function () {
+				var txt = document.getElementById('txt1').value;
+				var txtArea = document.getElementById('txtArea').value;
+				var tr = document.getElementById('tb1').insertRow(-1);
+				tr.insertCell(-1).innerHTML = txt;
+				tr.insertCell(-1).innerHTML = txtArea;
+			};
+		};
+	</script>
+</head>
+<body>
+	<table id="tb1">
+		<tr>
+			<td>小明</td>
+			<td>沙发</td>
+		</tr>
+	</table>
+	<input type="text" id="txt1" name="name" value="" /><br/>
+	<textarea id="txtArea"></textarea><br />
+	<input type="button" name="name" value="评论" id="btn" />
+</body>
+</html>

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		window.onload = function () {
+			document.getElementById('btn').onclick = function () {
+				var txt = document.getElementById('txt1').value;//获取文本中的内容
+				var ta = document.getElementById('txt').value;//获取多行文本中的内容
+				var tr = document.createElement('tr');//添加一行
+				var td1 = document.createElement('td');
+				td1.innerHTML = txt;
+				var td2 = document.createElement('td');
+				td2.innerHTML = ta;
+				tr.appendChild(td1);
+				tr.appendChild(td2);
+				document.getElementById('tb1').appendChild(tr);
+			};
+		};
+	</script>
+</head>
+<body>
+	<table border="1" id="tb1">
+		<tr><td>猫猫：</td><td>沙发耶！</td></tr>
+	</table>
+	昵称：<input type="text" id="txt1" /><br />
+	<textarea id="txt"></textarea><br />
+	<input type="button" value="评论" id="btn" />
+
+
+</body>
+</html>

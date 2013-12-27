@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		//var f = function () { alert('aaaaaaa'); };
+		//f();
+		//(function (msg) { alert(msg); })('声明的时候就调用了这个函数');
+
+		//var f = new Function('x,y,z', 'alert(x+y+z)');
+		//f(1, 2, 3);
+
+		//var f = new Function('x', 'y', 'z', 'alert(x+y+z)');
+		//f(12, 14, 16);
+
+		//匿名函数由于没有方法名，所以没有预解析，执行的过程是从上到下
+		//所以不会覆盖
+		var x = 1, y = 2, z = 3;
+		var add = function (n) { n = n + 1; return n; };
+		y = add(x);
+		add = function (n) { n = n + 3; return n; };
+		z = add(x);
+		alert(y + '.........' + z);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

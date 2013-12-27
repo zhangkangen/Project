@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		window.onload = function () {
+			document.getElementById('btn').onclick = function () {
+				var res = parseInt(document.getElementById('txt1').value) + parseInt(document.getElementById('txt2').value);
+				if (!isNaN(res)) {
+					document.getElementById('txt3').value = res;
+				} else {
+					alert('请输入数字');
+				}
+			};
+		};
+	</script>
+</head>
+<body>
+	<input type="text" name="name" value="" id="txt1" />+
+	<input type="text" name="name" value="" id="txt2" />
+	<input type="button" name="name" value="=" id="btn" />
+	<input type="text" name="name" value="" id="txt3" />
+</body>
+</html>

@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<style type="text/css">
+		div {
+			width: 200px;
+			height: 200px;
+			display: none;
+			background-color: blue;
+			margin:auto auto;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function () {
+			document.getElementById('btnLogin').onclick = function () {
+				var dvObj = document.getElementById('dv1');
+				dvObj.style.display = 'block';
+
+			};
+			document.getElementById('btnClose').onclick = function () {
+				var dvObj = document.getElementById('dv1');
+				dvObj.style.display = 'none';
+			};
+		};
+	</script>
+</head>
+<body>
+	<input type="button" name="name" value="登陆" id="btnLogin" />
+	<div id="dv1">
+		用户名：<input type="text" name="name" value="" /> <br />
+		密码：<input type="text" name="name" value="" /> <br />
+		<input type="button" name="name" value="登陆" />
+		<input type="button" name="name" value="关闭" id="btnClose" />
+	</div>
+</body>
+</html>

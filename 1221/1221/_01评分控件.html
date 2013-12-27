@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<style type="text/css">
+		#tb1 {
+			font-size: 50px;
+			cursor: pointer;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function () {
+			var tds = document.getElementById('tb1').getElementsByTagName('td');
+			for (var i = 0; i < tds.length; i++) {
+
+				//给每个td添加一个score属性
+				tds[i].setAttribute('score', 10 * (i + 1));
+
+				//给每个td添加一个鼠标悬浮事件
+				tds[i].onmouseover = function () {
+					//先对所有的td初始化
+					for (var l = 0; l < tds.length; l++) {
+						tds[l].innerHTML = '☆';
+					}
+					//当前点击的和之前的☆变成★
+					for (var j = 0; j < tds.length; j++) {
+						tds[j].innerHTML = '★';
+						if (tds[j] == this) {
+							break;
+						}
+					}
+				};
+				//给每个td添加一个鼠标离开事件
+				tds[i].onmouseout = function () {
+					if (this.getAttribute('isClicked') == null) {
+						for (var k = 0; k < tds.length; k++) {
+							tds[k].innerHTML = '☆';
+							tds[k].removeAttribute('isClicked');
+						}
+					}
+				};
+
+				//给每个td添加单击事件
+				tds[i].onclick = function () {
+					for (var m = 0; m < tds.length; m++) {
+						tds[m].removeAttribute('isClicked');
+					}
+					this.setAttribute('isClicked', true);
+				};
+			}
+		};
+	</script>
+</head>
+<body>
+	<table id="tb1">
+		<tr>
+			<td>☆</td>
+			<td>☆</td>
+			<td>☆</td>
+			<td>☆</td>
+			<td>☆</td>
+		</tr>
+	</table>
+</body>
+</html>

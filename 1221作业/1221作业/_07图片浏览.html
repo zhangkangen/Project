@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		window.onload = function () {
+			document.getElementById('btn').onclick = function () {
+				var dict = {
+					'images/1-1.jpg': ['images/1.jpg', '张三', '178cm'],
+					'images/2-1.jpg': ['images/2.jpg', '李四', '178cm'],
+					'images/3-1.jpg': ['images/3.jpg', '王五', '178cm']
+				};
+				//遍历字典动态创建图片
+				for (var key in dict) {
+					//创建一个图片
+					var img = document.createElement('img');
+					//设置图片的路径
+					img.src = key;
+					//给图片添加一个自定义属性key
+					img.setAttribute('key', key);
+					//将图片添加到dv1中
+					document.getElementById('dv1').appendChild(img);
+					//为图片添加鼠标悬浮事件
+					img.onmouseover = function () {
+						//获取自定义的属性里的key
+						var keyvalue = this.getAttribute('key');
+						document.getElementById('img1').src = dict[keyvalue][0];
+						document.getElementById('p1').innerHTML = '姓名：' + dict[keyvalue][1] + '身高' + dict[keyvalue][2];
+						document.getElementById('dv2').style.display = 'block';
+					};
+					img.onmouseout = function () {
+						document.getElementById('dv2').style.display = 'none';
+					};
+				}
+
+			};
+		};//onload
+	</script>
+	<style type="text/css">
+		#dv2 {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="dv1">
+		<input type="button" name="name" value="显示图片" id="btn" />
+	</div>
+	<div id="dv2">
+		<img id="img1" src="#" alt="Alternate Text" />
+		<p id="p1"></p>
+	</div>
+</body>
+</html>

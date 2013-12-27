@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		window.onload = function () {
+			loadImg();
+			setInterval(loadImg, 1000);
+		};
+		function loadImg() {
+			var h = new Date().getHours();
+			h = h < 10 ? '0' + h : h;
+			var s = new Date().getSeconds();
+			s = s < 10 ? '0' + s : s;
+			document.getElementById('img1').src = 'images\\' + h + '_' + s + '.jpg';
+		}
+	</script>
+</head>
+<body>
+	<img src="#" alt="Alternate Text" id="img1" />
+</body>
+</html>

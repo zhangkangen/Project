@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript">
+		window.onload = function () {
+			var datas = {
+				"山东": ["青岛", "济南", "烟台"],
+				"山西": ["大同", "太原", "运城"],
+				"陕西": ["西安", "咸阳", "汉中"],
+				"河南": ["郑州", "洛阳", "开封"]
+			};
+			//给s1添加子元素
+			for (var key in datas) {
+				var opt = document.createElement('option');
+				opt.value = key;
+				opt.innerHTML = key;
+				document.getElementById('s1').appendChild(opt);
+			}
+			//设置默认子元素
+			for (var i = 0; i < datas.山东.length; i++) {
+				var opt2 = document.createElement('option');
+				opt2.innerHTML = datas.山东[i];
+				document.getElementById('s2').appendChild(opt2);
+			}
+
+			//动态改变s2中元素值
+			document.getElementById('s1').onchange = function () {
+				//先清空元素
+				document.getElementById('s2').innerHTML = '';
+				//遍历添加元素
+				for (var i = 0; i < datas[this.value].length; i++) {
+					var opt3 = document.createElement('option');
+					opt3.innerHTML = datas[this.value][i];
+					document.getElementById('s2').appendChild(opt3);
+				}
+			};
+		};
+	</script>
+</head>
+<body>
+	<select id="s1"></select>
+	<select id="s2"></select>
+</body>
+</html>

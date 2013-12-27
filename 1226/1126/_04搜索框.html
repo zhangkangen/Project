@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script src="javascripts/jquery-1.10.1.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('#txt1').focus(function () {
+				if ($(this).hasClass('cls')) {
+					$(this).removeClass('cls').val('');
+				}
+			}).blur(function () {
+				if ($(this).val().length == 0) {
+					$(this).addClass('cls').val('请输入搜索关键字');
+				}
+			});
+		});
+	</script>
+	<script src="javascripts/jquery-1.10.1.js"></script>
+	<style type="text/css">
+		.cls {
+			color: gray;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" class="cls" name="name" value="请输入搜索关键字" id="txt1" />
+</body>
+</html>

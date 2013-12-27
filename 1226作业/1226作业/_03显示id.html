@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script src="javascripts/jquery-1.10.1.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('body *').mouseover(function () {
+				$('#displayId').css({ 'display': 'block', 'left': $(this).offset().left, 'top': $(this).offset().top + $(this).height() + 5 + 'px' }).text($(this).prop('id'));
+			}).mouseout(function () {
+				$('#displayId').css('display', 'none');
+			});
+		});
+	</script>
+	<style type="text/css">
+		#displayId {
+			position: absolute;
+			background-color: yellow;
+			color: red;
+			width: 50px;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" name="name" value="" id="txt1" />
+	<input type="button" name="name" value="button" id="btn" />
+	<input type="radio" name="gender" value="male" id="man" />男
+	<input type="radio" name="gender" value="female" id="woman" />女
+	<div id="dv1"></div>
+	<span id="sp1">content</span>
+	<p id="p1"></p>
+	<span id="displayId"></span>
+</body>
+</html>

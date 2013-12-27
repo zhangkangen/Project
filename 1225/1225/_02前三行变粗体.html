@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script src="scripts/jquery-1.10.1.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('#btn').click(function () {
+				$('#uone li:lt(3)').css('fontWeight', 'bolder');
+			});
+		});
+	</script>
+</head>
+<body>
+	<input type="button" name="name" value="变" id="btn" />
+	<ul id="uone">
+		<li>热火</li>
+		<li>热火</li>
+		<li>热火</li>
+		<li>热火</li>
+		<li>热火</li>
+		<li>热火</li>
+		<li>热火</li>
+	</ul>
+</body>
+</html>
